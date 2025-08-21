@@ -1,0 +1,727 @@
+{
+  "header": {
+    "tasks": "Tasks",
+    "projects": "Projects",
+    "teams": "Teams",
+    "reports": "Reports",
+    "kanban": "Kanban",
+    "trash": "Trash",
+    "poweredBy": "Gemini",
+    "projectsBreadcrumb": "Projects"
+  },
+  "lang": {
+    "es": "Spanish",
+    "en": "English",
+    "ar": "Arabic"
+  },
+  "dashboard": {
+    "filter": {
+      "searchPlaceholder": "Search by ID, title...",
+      "critical": "Critical",
+      "import": "Import CSV",
+      "export": "Export CSV",
+      "newTask": "New Task",
+      "active": "Active",
+      "archived": "Archived",
+      "allArchived": "All (Arch.)",
+      "allProjects": "All Projects",
+      "allTypes": "All Types",
+      "allPriorities": "All Priorities",
+      "allStates": "All States"
+    },
+    "inboxTitle": "Inbox ({{count}})",
+    "noTasks": "No tasks found with the current filters.",
+    "downloadTemplate": "Download CSV Template",
+    "noTicketSelected": "No Task Selected",
+    "selectTicketPrompt": "Please select a task from the list to see its details.",
+    "createFirstTicket": "Click on \"+ New Task\" to get started.",
+    "backToProject": "Back to Project"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "noNotifications": "No new notifications.",
+    "unread": "Unread changes",
+    "ticketMoved": "Task {{ticketId}} moved.",
+    "ticketMovedText": "Task {{ticketId}} was moved from {{from}} to {{to}}.",
+    "ticketCreated": "Task {{ticketId}} successfully created.",
+    "ticketUpdated": "Task {{ticketId}} updated."
+  },
+  "kanban": {
+    "title": "Kanban Board",
+    "compactView": "Compact View",
+    "daysAgo": "{{count}}d ago",
+    "card": {
+        "unassigned": "Unassigned",
+        "edit": "Edit",
+        "move": "Move",
+        "comment": "Comment",
+        "history": "History",
+        "delete": "Delete"
+    },
+    "moveModal": {
+      "title": "Move Task to...",
+      "move": "Move"
+    }
+  },
+  "move": {
+    "block": {
+      "role": "Your role ({{rol}}) cannot perform this move.",
+      "checklist": "To advance from {{fromState}}, you must complete the checklist: {{itemsPendientes}}.",
+      "skip": "You cannot skip states. Advance step-by-step."
+    }
+  },
+   "workflow": {
+    "error": {
+      "title": "Invalid Move",
+      "fromTerminal": "Cannot move a task from a terminal state ('Closed' or 'Not Applicable').",
+      "assigneeRequired": "An assignee is required for a task to be in 'In Progress' or any subsequent state.",
+      "invalidState": "The transition involves an invalid or unknown state.",
+      "jumpNotAllowed": "Your role does not permit moving a task to a non-sequential state.",
+      "unknown": "An unknown error occurred while trying to move the task.",
+      "noUser": "Current user could not be identified.",
+      "collaboratorCannotMoveForward": "As the Assignee, you cannot move tasks forward. Please request a review.",
+      "checklistIncomplete": "The checklist for the current state must be completed before moving forward. An Administrator can override this on the Kanban board.",
+      "checklistIncompleteAdminRequired": "The checklist is incomplete. Administrator privileges are required to move this card.",
+      "permissionDenied": "You do not have permission to perform this action."
+    },
+    "reason": {
+      "label": "Reason for this change",
+      "placeholder": "Provide a brief explanation...",
+      "notApplicable": "Reason for setting as Not Applicable",
+      "backwardMove": "Reason for moving state backward",
+      "jumpMove": "Reason for this non-sequential move"
+    },
+    "audit": {
+      "adminOverride": "Admin override: Checklist was incomplete."
+    }
+  },
+  "pqrCard": {
+    "unassigned": "Unassigned"
+  },
+  "pqrDetail": {
+    "editPQR": "Edit Task",
+    "sendToTrash": "Send to Trash",
+    "unarchivePQR": "Unarchive Task",
+    "archivePQR": "Archive Task",
+    "project": "Project",
+    "assignee": "Assignee",
+    "reporter": "Reporter",
+    "po_cto": "PO / CTO",
+    "collaborators": "Collaborators",
+    "unassigned": "Unassigned",
+    "na": "N/A",
+    "priority": "Priority",
+    "type": "Type",
+    "channel": "Channel",
+    "receivedOn": "Received On",
+    "dueDate": "Due Date",
+    "sla": "SLA",
+    "slaHours": "{{count}} hours",
+    "mainContract": "Main Contract",
+    "fullDescription": "Full Description",
+    "comments": "Comments & Discussion",
+    "noComments": "No comments yet. Be the first to add one.",
+    "addCommentPlaceholder": "Write a comment...",
+    "sendComment": "Send comment",
+    "auditHistory": "Audit History",
+    "you": "YOU",
+    "checklistForState": "Checklist – {{state}}",
+    "checklistNotCompleteError": "You must complete all items in the current checklist before changing to a new state.",
+    "attachEvidence": "Attach Evidence",
+    "noAttachments": "No attachments.",
+    "histories": {
+      "attachments": "Attachments",
+      "progress": "Progress",
+      "audit": "Audit"
+    },
+    "header": {
+      "taskType": "Task Type",
+      "area": "Area/Dept",
+      "createdDate": "Created",
+      "lastUpdate": "Last Update",
+      "timeRemaining": "Time Remaining",
+      "whatsappMenu": {
+        "share": "Share link",
+        "sendWhatsApp": "Send via WhatsApp",
+        "sendEmail": "Send via Email",
+        "copy": "Copy URL",
+        "generateImage": "Generate image with link",
+        "shareError": "Could not copy automatically. Please copy the link manually.",
+        "clipboardSuccess": "Link copied to clipboard."
+      }
+    },
+    "modal": {
+      "titleAttachments": "Attachment History",
+      "titleProgress": "Progress History",
+      "titleAudit": "Audit & Comment History",
+      "copy": "Copy",
+      "download": "Download",
+      "copied": "Copied!"
+    }
+  },
+  "unifiedPanel": {
+    "title": "Tracking and Progress",
+    "addCommentAction": "Add progress comment",
+    "updateChecklistAction": "Update checklist",
+    "progressTitle": "Task Progress",
+    "addCommentPlaceholder": "Add comment about the progress...",
+    "logProgressBtn": "Log Progress",
+    "aiQuestionsTitle": "Additional Questions (AI)",
+    "generateAIBtn": "Generate Questions",
+    "noAIQuestions": "No AI questions have been generated for this state.",
+    "criticalQuestion": "Critical",
+    "answerPlaceholder": "Write your answer here...",
+    "saveAnswerBtn": "Save",
+    "noProgressHistory": "No progress has been logged yet.",
+    "advanceStateBtn": "Request Review / Change State",
+    "errors": {
+      "cantAdvanceTitle": "Cannot Advance State",
+      "progressNot100": "Progress must be at 100%.",
+      "checklistIncomplete": "The following checklist items are pending:",
+      "criticalQuestions": "The following critical AI questions have not been answered:",
+      "aiErrorTitle": "AI Error",
+      "aiErrorBody": "Could not generate questions. Please try again later."
+    }
+  },
+  "checklist": {
+    "backlog": {
+      "desc": "Clear description of the request",
+      "justify": "Justification and initial context",
+      "refs": "Attach references (screenshots, briefs, links)",
+      "stakeholders": "Identify stakeholders and possible assignee",
+      "viability": "Preliminary feasibility assessment"
+    },
+    "todo": {
+      "reqs": "Requirements complete and validated",
+      "docs": "Attach technical and business documentation",
+      "assignee": "Assign main responsible person",
+      "estimate": "Estimate resources and time (hours)",
+      "leader_validation": "Leader validation before starting"
+    },
+    "inprogress": {
+      "time": "Estimated time registered (includes buffer)",
+      "log": "Progress log updated",
+      "evidence": "Attach progress evidence/screenshots",
+      "commits": "Reference commits/PRs/repositories (if applicable)",
+      "risks": "Record of blockers or risks"
+    },
+    "review": {
+      "verify": "Verification against requirements",
+      "feedback": "Reviewer feedback attached",
+      "adjustments": "List of adjustments completed",
+      "confirm": "Confirmation: ready for testing"
+    },
+    "test": {
+      "unit": "Unit tests executed",
+      "integration": "Integration/automated tests executed",
+      "results": "Test results recorded",
+      "evidence": "Evidence attached (screenshots, logs)",
+      "validation": "Validation: ready for client"
+    },
+    "waiting": {
+      "delivery": "Official delivery to client registered",
+      "feedback": "Client feedback attached",
+      "improvements": "Improvement requests documented",
+      "approval": "Confirmation of approval or changes"
+    },
+    "closed": {
+      "satisfaction": "Client satisfaction confirmed",
+      "docs": "Final documentation and deliverables attached",
+      "invoice": "Invoice registered (if applicable)",
+      "archive": "Final archive of all documentation"
+    },
+    "na": {
+      "justify": "Cancellation justification documented",
+      "notify": "Notification to stakeholders",
+      "archive": "Archive of relevant documents",
+      "close": "Administrative closure registered"
+    }
+  },
+  "gemini": {
+    "analysisTitle": "AI Analysis",
+    "analyzing": "Analyzing...",
+    "error": "Could not generate summary. Please try again.",
+    "regenerate": "Regenerate",
+    "generating": "Generating...",
+    "noDescription": "No description to analyze.",
+    "failoverGuidance": "Gemini is unavailable. Please select 'ChatGPT' in the header and provide an API key to use the backup AI."
+  },
+  "aiSelector": {
+    "revertingToGemini": "OpenAI provider requires an API key. Reverting to Gemini."
+  },
+  "reports": {
+    "title": "Reports",
+    "newReport": "New Report",
+    "manageSchedules": "Manage Schedules",
+    "filters": {
+      "dateRange": "Date Range",
+      "allTime": "All Time",
+      "status": "Status",
+      "allStates": "All States",
+      "assignee": "Assignee",
+      "allAssignees": "All Assignees",
+      "project": "Project",
+      "allProjects": "All Projects",
+      "searchPlaceholder": "Search in title/description...",
+      "dateFilterType": "Filter dates by",
+      "byCreationDate": "Creation Date",
+      "byClosingDate": "Closing Date"
+    },
+    "card": {
+      "edit": "Edit",
+      "export": "Export",
+      "noData": "No data available for the current filters.",
+      "unsupported": "This chart type is not yet supported.",
+      "exportCSV": "Export to CSV",
+      "exportJSON": "Export to JSON",
+      "exportXLSX": "Export to XLSX",
+      "exportPDF": "Export to PDF",
+      "schedule": "Schedule"
+    },
+    "export": {
+      "headers": {
+        "metric": "Metric",
+        "value": "Value"
+      }
+    },
+    "builder": {
+      "newTitle": "New Report",
+      "editTitle": "Edit Report",
+      "name": "Report Name",
+      "namePlaceholder": "e.g., 'Weekly Closed Tickets'",
+      "widgetType": "Visualization Type",
+      "query": "Metric to Display",
+      "createReport": "Create Report",
+      "widgetTypes": {
+        "kpi": "KPI",
+        "bar": "Bar Chart",
+        "line": "Line Chart",
+        "pie": "Pie Chart",
+        "table": "Table"
+      }
+    },
+    "scheduler": {
+      "title": "Schedule Reports",
+      "existing": "Existing Schedules",
+      "noSchedules": "No schedules have been created yet.",
+      "edit": "Edit",
+      "delete": "Delete",
+      "formTitleNew": "New Schedule",
+      "formTitleEdit": "Edit Schedule",
+      "name": "Schedule Name",
+      "namePlaceholder": "e.g., 'Daily Management Report'",
+      "frequency": "Frequency",
+      "time": "Time (Local)",
+      "recipients": "Recipients",
+      "recipientsPlaceholder": "email1@example.com, email2@example.com",
+      "format": "Format",
+      "reportsToInclude": "Reports to Include",
+      "saveSchedule": "Save Schedule",
+      "createSchedule": "Create Schedule",
+      "frequencyOptions": {
+        "daily": "Daily",
+        "weekly": "Weekly (Mondays)",
+        "monthly": "Monthly (1st)"
+      }
+    },
+    "preconfigured": {
+      "pqrByStatus": "Tasks by Status",
+      "slaCompliance": "SLA Compliance",
+      "backlogAging": "Backlog Aging",
+      "loadByAssignee": "Load by Assignee",
+      "responseTime": "Avg. 1st Response Time",
+      "throughput": "Daily Throughput (Closed Tasks)",
+      "burnDownChart": "Burn Down Chart"
+    },
+    "queries": {
+      "pqr_by_status": "Task Count by Status",
+      "sla_compliance": "SLA Compliance KPIs",
+      "sla_compliance_on_time_closed": "On-Time (Closed)",
+      "sla_compliance_late_closed": "Late (Closed)",
+      "sla_compliance_open_overdue": "Open & Overdue",
+      "sla_compliance_compliance": "Compliance %",
+      "backlog_aging": "Open Task Aging",
+      "load_by_assignee": "Open Tasks by Assignee",
+      "first_response_time_avg": "Average First Response Time",
+      "throughput": "Tasks Closed per Day",
+      "burn_down_chart": "Open Tasks Burn Down"
+    },
+    "history": {
+      "title": "Report History",
+      "viewHistory": "View History",
+      "backToReports": "Back to Reports",
+      "clearHistory": "Clear History",
+      "clearConfirmTitle": "Clear History?",
+      "clearConfirmBody": "Are you sure you want to permanently delete all report history? This action cannot be undone.",
+      "noHistory": "No reports have been generated yet.",
+      "filterByDate": "Filter by date",
+      "filterByReport": "Filter by report",
+      "allReports": "All Reports",
+      "headers": {
+        "date": "Date",
+        "report": "Report",
+        "format": "Format",
+        "triggeredBy": "Triggered By",
+        "actions": "Actions"
+      },
+      "reDownload": "Re-download",
+      "triggered": {
+        "manual": "Manual",
+        "scheduled": "Scheduled"
+      }
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next",
+      "page": "Page {{current}} of {{total}}"
+    },
+    "burndown": {
+      "ideal": "Ideal (plan)",
+      "real": "Real (progress)"
+    }
+  },
+  "projects": {
+    "list": {
+      "title": "Projects",
+      "newProject": "New Project",
+      "headers": {
+        "name": "Project Name",
+        "owner": "Owner",
+        "status": "Status",
+        "pqrs": "Tasks",
+        "lastActivity": "Last Activity",
+        "actions": "Actions"
+      },
+      "noProjects": "No projects found. Create the first one.",
+      "actionsMenu": {
+        "view": "View",
+        "edit": "Edit",
+        "archive": "Archive",
+        "restore": "Restore",
+        "duplicate": "Duplicate",
+        "sendToTrash": "Send to Trash",
+        "disabledTrashTooltip": "Only archived projects with no tasks can be deleted."
+      }
+    },
+    "detail": {
+      "back": "Back",
+      "edit": "Edit",
+      "copyKey": "Copy Key",
+      "kpis": {
+        "total": "Total Tasks",
+        "open": "Open",
+        "closed": "Closed",
+        "overdue": "SLA Overdue",
+        "na": "N/A"
+      },
+      "tabs": {
+        "team": "Team",
+        "pqrs": "Tasks",
+        "config": "Configuration"
+      },
+      "noTeamMembers": "No members in this project.",
+      "config": {
+        "owner": "Project Owner",
+        "defaultSLA": "Default SLA",
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "description": "Description",
+        "notSet": "Not specified"
+      }
+    }
+  },
+  "teams": {
+    "title": "Users & Teams",
+    "newUser": "New User",
+    "headers": {
+      "name": "Name",
+      "globalRole": "Global Role",
+      "status": "Status",
+      "projects": "Projects",
+      "actions": "Actions"
+    },
+    "statusActive": "Active",
+    "statusInactive": "Inactive",
+    "edit": "Edit",
+    "deleteDisabledTooltip": "Cannot delete the last active administrator.",
+    "noUsers": "No users found. Create the first one."
+  },
+  "trash": {
+    "title": "Recycle Bin",
+    "emptyTrash": "Empty Trash",
+    "retentionPolicy": "Items in the trash will be permanently deleted after 30 days.",
+    "tabs": {
+      "all": "All",
+      "projects": "Projects",
+      "tickets": "Tasks",
+      "users": "Users"
+    },
+    "headers": {
+      "item": "Item",
+      "type": "Type",
+      "trashedOn": "Trashed On",
+      "expiresIn": "Expires In"
+    },
+    "types": {
+      "project": "Project",
+      "pqr": "Task",
+      "user": "User"
+    },
+    "actions": {
+      "restore": "Restore",
+      "delete": "Delete"
+    },
+    "empty": "The trash is empty.",
+    "modal": {
+      "title": "Confirmation Required",
+      "body": "This action is irreversible and will permanently delete all items from the trash.",
+      "prompt": "To continue, type",
+      "confirmText": "EMPTY",
+      "placeholder": "EMPTY",
+      "checkboxLabel": "I understand this action cannot be undone."
+    }
+  },
+  "modals": {
+    "cancel": "Cancel",
+    "saveChanges": "Save Changes",
+    "create": "Create",
+    "confirm": "Confirm",
+    "close": "Close",
+    "alert": {
+      "incompleteChecklistTitle": "Incomplete Checklist",
+      "close": "Got it"
+    },
+    "apiKey": {
+      "title": "{{provider}} API Key",
+      "description": "Please enter your API key for {{provider}}. The key will be stored in session memory and will be lost when the tab is closed.",
+      "label": "API Key",
+      "placeholder": "sk-...",
+      "success": "{{provider}} key saved successfully."
+    },
+    "pqrForm": {
+      "editTitle": "Edit Task: {{id}}",
+      "newTitle": "New Task",
+      "title": "Title",
+      "titleError": "Title is required.",
+      "project": "Project",
+      "projectError": "You must select a project.",
+      "assignee": "Assignee",
+      "assigneeError": "You must assign a responsible user.",
+      "reporter": "Reporter",
+      "po_cto": "PO / CTO",
+      "collaborators": "Collaborators (emails separated by comma)",
+      "status": "Status",
+      "priority": "Priority",
+      "type": "PQR Type",
+      "taskType": "Task Type",
+      "channel": "Channel",
+      "sla": "SLA (hours)",
+      "slaError": "SLA must be a positive number.",
+      "dueDate": "Due date: {{date}}",
+      "mainContract": "Main Contract",
+      "description": "Description",
+      "descriptionError": "Description is required.",
+      "attachments": "Attachments",
+      "dropzone": "Drag and drop your files here, or click to select.",
+      "dropzoneHint": "PDF, PNG, JPG, DOCX (Max 10MB)",
+      "saveTask": "Save Task"
+    },
+    "projectForm": {
+      "editTitle": "Edit Project",
+      "newTitle": "New Project",
+      "name": "Project Name",
+      "owner": "Project Owner (Lead)",
+      "ownerError": "Project Name and Owner are required.",
+      "selectOwner": "Select Owner",
+      "description": "Description",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "defaultSLA": "Default SLA (hours)",
+      "status": "Status",
+      "createProject": "Create Project"
+    },
+    "userForm": {
+      "editTitle": "Edit User Profile",
+      "newTitle": "New User",
+      "fullName": "Full Name",
+      "email": "Email",
+      "nameAndEmailError": "Full Name and Email are required.",
+      "whatsapp": "WhatsApp",
+      "position": "Position",
+      "globalRole": "Global Role",
+      "activeUser": "Active User",
+      "assignProjects": "Assign Projects",
+      "noProjects": "No projects to assign.",
+      "createUser": "Create User"
+    },
+    "importSummary": {
+      "title": "Import Summary",
+      "completed": "Process completed.",
+      "created": "Tickets Created",
+      "errorsFound": "{{count}} errors found:",
+      "line": "Line {{line}}:"
+    },
+    "modal": {
+        "justification": {
+            "title": "Justification Required"
+        },
+        "override": {
+            "title": "Administrator Override"
+        }
+    }
+  },
+  "time": {
+    "dueInDays_one": "Due in {{count}}d",
+    "dueInDays_other": "Due in {{count}}d",
+    "dueInHours_one": "Due in {{count}}h",
+    "dueInHours_other": "Due in {{count}}h",
+    "overdueByDays_one": "Overdue by {{count}}d",
+    "overdueByDays_other": "Overdue by {{count}}d",
+    "overdueByHours_one": "Overdue by {{count}}h",
+    "overdueByHours_other": "Overdue by {{count}}h",
+    "expiresNow": "Expires now",
+    "expiresIn": "{{days}}d {{hours}}h"
+  },
+  "enums": {
+    "status": {
+      "Backlog": "Backlog",
+      "ToDo": "To Do",
+      "InProgress": "In Progress",
+      "Review": "Review",
+      "Test": "Test",
+      "WaitingForClient": "Waiting for Client",
+      "ReleasedClosed": "Released / Closed",
+      "NotApplicable": "Not Applicable"
+    },
+    "priority": {
+      "Alta": "High",
+      "Media": "Medium",
+      "Baja": "Low"
+    },
+    "tipo": {
+      "Petición": "Petition",
+      "Queja": "Complaint",
+      "Reclamo": "Claim",
+      "Sugerencia": "Suggestion"
+    },
+    "canal": {
+      "Email": "Email",
+      "WhatsApp": "WhatsApp",
+      "App": "App",
+      "Otro": "Other"
+    },
+    "projectStatus": {
+      "Propuesto": "Proposed",
+      "Active": "Active",
+      "Archived": "Archived",
+      "On Hold": "On Hold"
+    },
+    "userRole": {
+      "Admin": "Admin",
+      "Líder": "Leader",
+      "Colaborador": "Collaborator",
+      "Client": "Client",
+      "Viewer": "Viewer"
+    },
+    "impacto": {
+        "Critico": "Critical",
+        "Alto": "High",
+        "Medio": "Medium",
+        "Bajo": "Low"
+    },
+    "area": {
+        "Backend": "Backend",
+        "Frontend": "Frontend",
+        "Solidity": "Solidity",
+        "QA": "QA",
+        "Diseno": "Design",
+        "General": "General"
+    }
+  },
+  "taskTypes": {
+    "PQR": "PQR",
+    "ODT": "Work Order",
+    "Bug": "Bug",
+    "Mejora": "Feature",
+    "Alerta": "Alert"
+  },
+  "taskTypeTooltips": {
+    "PQR": "Requests, Complaints, Claims, Suggestions. Flow associated with support and customers.",
+    "ODT": "Internal Work Orders, assigned by leaders or product owners.",
+    "Bug": "Incidents detected in QA or production. Technical issues to be resolved.",
+    "Mejora": "Requests for new features or system improvements.",
+    "Alerta": "Automatic notifications generated by the system (e.g., expirations, lack of updates)."
+  },
+  "slaStatus": {
+    "overdue": "SLA Overdue",
+    "dueSoon": "Due Soon",
+    "onTime": "On Time"
+  },
+  "tooltips": {
+    "notifications": "View notifications",
+    "toggleLanguage": "Change language",
+    "userAvatar": "User profile",
+    "criticalFilter": "Show only tickets with overdue SLA",
+    "importCSV": "Import tickets from a CSV file",
+    "exportCSV": "Export the current view to a CSV file",
+    "newTask": "Create a new task",
+    "downloadCSVTemplate": "Download a CSV template for importing tickets",
+    "regenerateSummary": "Regenerate summary with AI",
+    "editTicket": "Edit the details of this task",
+    "shareTicket": "Share this task",
+    "shareViaWhatsapp": "Share a summary and link via WhatsApp",
+    "shareViaEmail": "Share a link via Email",
+    "copyURL": "Copy task URL to clipboard",
+    "generateImage": "Download a summary image of the task",
+    "viewAttachments": "View attachment history",
+    "viewProgress": "View progress history",
+    "viewAudit": "View audit log and comments",
+    "closeModal": "Close this window",
+    "copyHistory": "Copy history to clipboard",
+    "downloadHistory": "Download history as a text file",
+    "addProgressComment": "Go to the progress comment section",
+    "updateChecklist": "Go to the checklist section",
+    "logProgress": "Save the current progress and comment",
+    "generateAIQuestions": "Generate contextual questions with AI",
+    "advanceState": "Complete the current stage and move to the next",
+    "sendComment": "Post your comment",
+    "newProject": "Create a new project",
+    "projectActions": "More project options",
+    "viewProjectDetails": "View project details",
+    "editProject": "Edit project settings",
+    "archiveProject": "Archive this project",
+    "restoreProject": "Restore this project from archives",
+    "duplicateProject": "Create a copy of this project",
+    "trashProject": "Send this project to the trash",
+    "trashProjectDisabled": "Only archived projects with no tasks can be sent to the trash.",
+    "backToProjects": "Back to project list",
+    "editProjectDetail": "Edit the details of this project",
+    "newUser": "Create a new user",
+    "editUser": "Edit user details",
+    "trashUser": "Send user to trash",
+    "trashUserDisabled": "Cannot send the last active administrator to the trash.",
+    "emptyTrash": "Permanently delete all items from the trash",
+    "restoreItem": "Restore this item",
+    "deletePermanently": "Delete this item forever",
+    "cancel": "Cancel and close the window",
+    "saveChanges": "Save the changes made",
+    "create": "Create the new item",
+    "confirmEmptyTrash": "Confirm and empty the trash",
+    "gotIt": "Close this alert",
+    "saveAnswer": "Save your answer",
+    "deleteAttachment": "Delete attachment",
+    "uploadAttachment": "Upload files",
+    "selectTask": "View details of {{taskId}}",
+    "selectProject": "View details of {{projectName}}",
+    "selectUser": "Edit details of {{userName}}",
+    "reportScheduled": "This report is part of an active schedule",
+    "enlargeReport": "Enlarge report",
+    "liftCard": "Press Space or Enter to lift the card for moving",
+    "dropCard": "Press Space or Enter to drop the card. Use arrow keys to move.",
+    "cancelMove": "Press Escape to cancel the move",
+    "translateComment": "Translate with AI",
+    "showTranslation": "Show translation",
+    "showOriginal": "Show original (es)",
+    "translationError": "Could not translate text."
+  }
+}

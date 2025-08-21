@@ -1,0 +1,324 @@
+{
+  "header": {
+    "dashboard": "لوحة التحكم",
+    "projects": "المشاريع",
+    "teams": "الفرق",
+    "trash": "سلة المهملات",
+    "poweredBy": "بدعم من Gemini",
+    "projectsBreadcrumb": "المشاريع"
+  },
+  "lang": {
+    "es": "الإسبانية",
+    "en": "الإنجليزية",
+    "ar": "العربية"
+  },
+  "dashboard": {
+    "filter": {
+      "searchPlaceholder": "بحث بالمعرف، العنوان...",
+      "critical": "الحرجة",
+      "import": "استيراد CSV",
+      "export": "تصدير CSV",
+      "newPQR": "طلب جديد",
+      "active": "النشطة",
+      "archived": "المؤرشفة",
+      "allArchived": "الكل (المؤرشفة)",
+      "allProjects": "كل المشاريع",
+      "allTypes": "كل الأنواع",
+      "allPriorities": "كل الأولويات",
+      "allStates": "كل الحالات"
+    },
+    "inboxTitle": "صندوق الوارد ({{count}})",
+    "noTickets": "لم يتم العثور على تذاكر بالمرشحات الحالية.",
+    "downloadTemplate": "تنزيل قالب CSV",
+    "noTicketSelected": "لم يتم تحديد تذكرة",
+    "selectTicketPrompt": "يرجى تحديد تذكرة من القائمة لعرض تفاصيلها.",
+    "createFirstTicket": "انقر على \"+ طلب جديد\" للبدء.",
+    "backToProject": "العودة إلى المشروع"
+  },
+  "pqrCard": {
+    "unassigned": "غير معين"
+  },
+  "pqrDetail": {
+    "editPQR": "تحرير الطلب",
+    "sendToTrash": "إرسال إلى سلة المهملات",
+    "unarchivePQR": "إلغاء أرشفة الطلب",
+    "archivePQR": "أرشفة الطلب",
+    "sendWhatsApp": "إرسال عبر واتساب",
+    "downloadImage": "تنزيل كصورة",
+    "project": "المشروع",
+    "assignee": "المسؤول",
+    "reporter": "المبلغ",
+    "po_cto": "مدير المنتج / المدير التقني",
+    "collaborators": "المتعاونون",
+    "unassigned": "غير معين",
+    "na": "غير متاح",
+    "priority": "الأولوية",
+    "type": "النوع",
+    "channel": "القناة",
+    "receivedOn": "تاريخ الاستلام",
+    "dueDate": "تاريخ الاستحقاق",
+    "sla": "اتفاقية مستوى الخدمة",
+    "slaHours": "{{count}} ساعة",
+    "mainContract": "العقد الرئيسي",
+    "progressChecklist": "قائمة التحقق من التقدم",
+    "checklistCompleted": "اكتمل {{completed}} من {{total}}",
+    "fullDescription": "الوصف الكامل",
+    "attachments": "المرفقات",
+    "noAttachments": "لا توجد مرفقات.",
+    "comments": "التعليقات والمناقشة",
+    "noComments": "لا توجد تعليقات بعد. كن أول من يضيف تعليقًا.",
+    "addCommentPlaceholder": "اكتب تعليقًا...",
+    "sendComment": "إرسال تعليق",
+    "auditHistory": "سجل التدقيق",
+    "you": "أنت"
+  },
+  "gemini": {
+    "summary": "ملخص بالذكاء الاصطناعي",
+    "analyzing": "جارٍ التحليل...",
+    "error": "تعذر إنشاء الملخص. الرجاء المحاولة مرة أخرى.",
+    "regenerate": "إعادة إنشاء",
+    "generating": "جارٍ الإنشاء..."
+  },
+  "projects": {
+    "list": {
+      "title": "المشاريع",
+      "newProject": "مشروع جديد",
+      "headers": {
+        "name": "اسم المشروع",
+        "owner": "المالك",
+        "status": "الحالة",
+        "pqrs": "الطلبات",
+        "lastActivity": "آخر نشاط",
+        "actions": "الإجراءات"
+      },
+      "noProjects": "لا توجد مشاريع. أنشئ الأول.",
+      "actionsMenu": {
+        "view": "عرض",
+        "edit": "تحرير",
+        "archive": "أرشفة",
+        "restore": "استعادة",
+        "duplicate": "تكرار",
+        "sendToTrash": "إرسال إلى سلة المهملات",
+        "disabledTrashTooltip": "يمكن حذف المشاريع المؤرشفة التي لا تحتوي على طلبات فقط."
+      }
+    },
+    "detail": {
+      "back": "رجوع",
+      "edit": "تحرير",
+      "copyKey": "نسخ المفتاح",
+      "kpis": {
+        "total": "إجمالي الطلبات",
+        "open": "مفتوحة",
+        "closed": "مغلقة",
+        "overdue": "متأخرة",
+        "na": "غير متاح"
+      },
+      "tabs": {
+        "team": "الفريق",
+        "pqrs": "الطلبات",
+        "config": "الإعدادات"
+      },
+      "noTeamMembers": "لا يوجد أعضاء في هذا المشروع.",
+      "config": {
+        "owner": "مالك المشروع",
+        "defaultSLA": "اتفاقية مستوى الخدمة الافتراضية",
+        "startDate": "تاريخ البدء",
+        "endDate": "تاريخ الانتهاء",
+        "description": "الوصف",
+        "notSet": "غير محدد"
+      }
+    }
+  },
+  "teams": {
+    "title": "المستخدمون والفرق",
+    "newUser": "مستخدم جديد",
+    "headers": {
+      "name": "الاسم",
+      "globalRole": "الدور العام",
+      "status": "الحالة",
+      "projects": "المشاريع",
+      "actions": "الإجراءات"
+    },
+    "statusActive": "نشط",
+    "statusInactive": "غير نشط",
+    "edit": "تحرير",
+    "deleteDisabledTooltip": "لا يمكن حذف آخر مسؤول نشط.",
+    "noUsers": "لا يوجد مستخدمون. أنشئ الأول."
+  },
+  "trash": {
+    "title": "سلة المحذوفات",
+    "emptyTrash": "إفراغ سلة المحذوفات",
+    "retentionPolicy": "سيتم حذف العناصر الموجودة في سلة المحذوفات نهائيًا بعد 30 يومًا.",
+    "tabs": {
+      "all": "الكل",
+      "projects": "المشاريع",
+      "tickets": "الطلبات",
+      "users": "المستخدمون"
+    },
+    "headers": {
+      "item": "العنصر",
+      "type": "النوع",
+      "trashedOn": "تاريخ الحذف",
+      "expiresIn": "ينتهي في"
+    },
+    "types": {
+      "project": "مشروع",
+      "pqr": "طلب",
+      "user": "مستخدم"
+    },
+    "actions": {
+      "restore": "استعادة",
+      "delete": "حذف"
+    },
+    "empty": "سلة المحذوفات فارغة.",
+    "modal": {
+      "title": "التأكيد مطلوب",
+      "body": "هذا الإجراء لا يمكن التراجع عنه وسيحذف جميع العناصر من سلة المحذوفات نهائيًا.",
+      "prompt": "للمتابعة، اكتب",
+      "confirmText": "إفراغ",
+      "placeholder": "إفراغ",
+      "checkboxLabel": "أفهم أن هذا الإجراء لا يمكن التراجع عنه."
+    }
+  },
+  "modals": {
+    "cancel": "إلغاء",
+    "saveChanges": "حفظ التغييرات",
+    "create": "إنشاء",
+    "confirm": "تأكيد",
+    "close": "إغلاق",
+    "pqrForm": {
+      "editTitle": "تحرير الطلب: {{id}}",
+      "newTitle": "طلب جديد",
+      "title": "العنوان",
+      "titleError": "العنوان مطلوب.",
+      "project": "المشروع",
+      "projectError": "يجب تحديد مشروع.",
+      "assignee": "المسؤول",
+      "assigneeError": "يجب تعيين مسؤول.",
+      "reporter": "المبلغ",
+      "po_cto": "مدير المنتج / المدير التقني",
+      "collaborators": "المتعاونون (بريد إلكتروني مفصول بفاصلة)",
+      "status": "الحالة",
+      "priority": "الأولوية",
+      "type": "النوع",
+      "sla": "SLA (ساعات)",
+      "slaError": "يجب أن يكون SLA رقمًا بين 1 و 168.",
+      "dueDate": "تاريخ الاستحقاق: {{date}}",
+      "mainContract": "العقد الرئيسي",
+      "description": "الوصف",
+      "descriptionError": "الوصف مطلوب.",
+      "attachments": "المرفقات",
+      "dropzone": "اسحب وأفلت ملفاتك هنا، أو انقر للتحديد.",
+      "dropzoneHint": "PDF, PNG, JPG, DOCX (الحد الأقصى 10 ميجابايت)",
+      "savePQR": "حفظ الطلب"
+    },
+    "projectForm": {
+      "editTitle": "تحرير المشروع",
+      "newTitle": "مشروع جديد",
+      "name": "اسم المشروع",
+      "owner": "مالك المشروع (قائد)",
+      "ownerError": "اسم المشروع والمالك مطلوبان.",
+      "selectOwner": "تحديد المالك",
+      "description": "الوصف",
+      "startDate": "تاريخ البدء",
+      "endDate": "تاريخ الانتهاء",
+      "defaultSLA": "SLA الافتراضي (ساعات)",
+      "status": "الحالة",
+      "createProject": "إنشاء مشروع"
+    },
+    "userForm": {
+      "editTitle": "تحرير ملف المستخدم",
+      "newTitle": "مستخدم جديد",
+      "fullName": "الاسم الكامل",
+      "email": "البريد الإلكتروني",
+      "nameAndEmailError": "الاسم الكامل والبريد الإلكتروني مطلوبان.",
+      "whatsapp": "واتساب",
+      "position": "المنصب",
+      "globalRole": "الدور العام",
+      "activeUser": "مستخدم نشط",
+      "assignProjects": "تعيين المشاريع",
+      "noProjects": "لا توجد مشاريع لتعيينها.",
+      "createUser": "إنشاء مستخدم"
+    },
+    "importSummary": {
+      "title": "ملخص الاستيراد",
+      "completed": "اكتملت العملية.",
+      "created": "التذاكر التي تم إنشاؤها",
+      "errorsFound": "تم العثور على {{count}} أخطاء:",
+      "line": "السطر {{line}}:"
+    }
+  },
+  "time": {
+    "dueInDays_zero": "يستحق في {{count}} يوم",
+    "dueInDays_one": "يستحق في يوم واحد",
+    "dueInDays_two": "يستحق في يومين",
+    "dueInDays_few": "يستحق في {{count}} أيام",
+    "dueInDays_many": "يستحق في {{count}} يومًا",
+    "dueInDays_other": "يستحق في {{count}} يوم",
+    "dueInHours_zero": "يستحق في {{count}} ساعة",
+    "dueInHours_one": "يستحق في ساعة واحدة",
+    "dueInHours_two": "يستحق في ساعتين",
+    "dueInHours_few": "يستحق في {{count}} ساعات",
+    "dueInHours_many": "يستحق في {{count}} ساعة",
+    "dueInHours_other": "يستحق في {{count}} ساعة",
+    "overdueByDays_zero": "متأخر {{count}} يوم",
+    "overdueByDays_one": "متأخر يوم واحد",
+    "overdueByDays_two": "متأخر يومين",
+    "overdueByDays_few": "متأخر {{count}} أيام",
+    "overdueByDays_many": "متأخر {{count}} يومًا",
+    "overdueByDays_other": "متأخر {{count}} يوم",
+    "overdueByHours_zero": "متأخر {{count}} ساعة",
+    "overdueByHours_one": "متأخر ساعة واحدة",
+    "overdueByHours_two": "متأخر ساعتين",
+    "overdueByHours_few": "متأخر {{count}} ساعات",
+    "overdueByHours_many": "متأخر {{count}} ساعة",
+    "overdueByHours_other": "متأخر {{count}} ساعة",
+    "expiresNow": "ينتهي الآن",
+    "expiresIn": "{{days}}ي {{hours}}س"
+  },
+  "enums": {
+    "status": {
+      "Nuevo": "جديد",
+      "En proceso": "قيد التنفيذ",
+      "Esperando cliente": "في انتظار العميل",
+      "Resuelto": "تم الحل",
+      "Cerrado": "مغلق",
+      "No aplica": "لا ينطبق"
+    },
+    "priority": {
+      "Alta": "عالية",
+      "Media": "متوسطة",
+      "Baja": "منخفضة"
+    },
+    "tipo": {
+      "Petición": "التماس",
+      "Queja": "شكوى",
+      "Reclamo": "مطالبة",
+      "Sugerencia": "اقتراح"
+    },
+    "canal": {
+      "Email": "البريد الإلكتروني",
+      "WhatsApp": "واتساب",
+      "App": "التطبيق",
+      "Otro": "آخر"
+    },
+    "projectStatus": {
+      "Propuesto": "مقترح",
+      "Active": "نشط",
+      "Archived": "مؤرشف",
+      "On Hold": "معلق"
+    },
+    "userRole": {
+      "Admin": "مدير",
+      "Leader": "قائد",
+      "Collaborator": "متعاون",
+      "Client": "عميل",
+      "Viewer": "مشاهد"
+    }
+  },
+  "slaStatus": {
+    "overdue": "متأخر",
+    "dueSoon": "قريب الاستحقاق",
+    "onTime": "في الوقت المحدد"
+  }
+}

@@ -1,0 +1,308 @@
+{
+  "header": {
+    "dashboard": "Dashboard",
+    "projects": "Projects",
+    "teams": "Teams",
+    "trash": "Trash",
+    "poweredBy": "Powered by Gemini",
+    "projectsBreadcrumb": "Projects"
+  },
+  "lang": {
+    "es": "Spanish",
+    "en": "English",
+    "ar": "Arabic"
+  },
+  "dashboard": {
+    "filter": {
+      "searchPlaceholder": "Search by ID, title...",
+      "critical": "Critical",
+      "import": "Import CSV",
+      "export": "Export CSV",
+      "newPQR": "New PQR",
+      "active": "Active",
+      "archived": "Archived",
+      "allArchived": "All (Arch.)",
+      "allProjects": "All Projects",
+      "allTypes": "All Types",
+      "allPriorities": "All Priorities",
+      "allStates": "All States"
+    },
+    "inboxTitle": "Inbox ({{count}})",
+    "noTickets": "No tickets found with the current filters.",
+    "downloadTemplate": "Download CSV Template",
+    "noTicketSelected": "No Ticket Selected",
+    "selectTicketPrompt": "Please select a ticket from the list to see its details.",
+    "createFirstTicket": "Click on \"+ New PQR\" to get started.",
+    "backToProject": "Back to Project"
+  },
+  "pqrCard": {
+    "unassigned": "Unassigned"
+  },
+  "pqrDetail": {
+    "editPQR": "Edit PQR",
+    "sendToTrash": "Send to Trash",
+    "unarchivePQR": "Unarchive PQR",
+    "archivePQR": "Archive PQR",
+    "sendWhatsApp": "Send via WhatsApp",
+    "downloadImage": "Download as Image",
+    "project": "Project",
+    "assignee": "Assignee",
+    "reporter": "Reporter",
+    "po_cto": "PO / CTO",
+    "collaborators": "Collaborators",
+    "unassigned": "Unassigned",
+    "na": "N/A",
+    "priority": "Priority",
+    "type": "Type",
+    "channel": "Channel",
+    "receivedOn": "Received On",
+    "dueDate": "Due Date",
+    "sla": "SLA",
+    "slaHours": "{{count}} hours",
+    "mainContract": "Main Contract",
+    "progressChecklist": "Progress Checklist",
+    "checklistCompleted": "{{completed}} of {{total}} completed",
+    "fullDescription": "Full Description",
+    "attachments": "Attachments",
+    "noAttachments": "No attachments.",
+    "comments": "Comments & Discussion",
+    "noComments": "No comments yet. Be the first to add one.",
+    "addCommentPlaceholder": "Write a comment...",
+    "sendComment": "Send comment",
+    "auditHistory": "Audit History",
+    "you": "YOU"
+  },
+  "gemini": {
+    "summary": "AI Summary",
+    "analyzing": "Analyzing...",
+    "error": "Could not generate summary. Please try again.",
+    "regenerate": "Regenerate",
+    "generating": "Generating..."
+  },
+  "projects": {
+    "list": {
+      "title": "Projects",
+      "newProject": "New Project",
+      "headers": {
+        "name": "Project Name",
+        "owner": "Owner",
+        "status": "Status",
+        "pqrs": "PQRs",
+        "lastActivity": "Last Activity",
+        "actions": "Actions"
+      },
+      "noProjects": "No projects found. Create the first one.",
+      "actionsMenu": {
+        "view": "View",
+        "edit": "Edit",
+        "archive": "Archive",
+        "restore": "Restore",
+        "duplicate": "Duplicate",
+        "sendToTrash": "Send to Trash",
+        "disabledTrashTooltip": "Only archived projects with no PQRs can be deleted."
+      }
+    },
+    "detail": {
+      "back": "Back",
+      "edit": "Edit",
+      "copyKey": "Copy Key",
+      "kpis": {
+        "total": "Total PQRs",
+        "open": "Open",
+        "closed": "Closed",
+        "overdue": "SLA Overdue",
+        "na": "N/A"
+      },
+      "tabs": {
+        "team": "Team",
+        "pqrs": "PQRs",
+        "config": "Configuration"
+      },
+      "noTeamMembers": "No members in this project.",
+      "config": {
+        "owner": "Project Owner",
+        "defaultSLA": "Default SLA",
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "description": "Description",
+        "notSet": "Not specified"
+      }
+    }
+  },
+  "teams": {
+    "title": "Users & Teams",
+    "newUser": "New User",
+    "headers": {
+      "name": "Name",
+      "globalRole": "Global Role",
+      "status": "Status",
+      "projects": "Projects",
+      "actions": "Actions"
+    },
+    "statusActive": "Active",
+    "statusInactive": "Inactive",
+    "edit": "Edit",
+    "deleteDisabledTooltip": "Cannot delete the last active administrator.",
+    "noUsers": "No users found. Create the first one."
+  },
+  "trash": {
+    "title": "Recycle Bin",
+    "emptyTrash": "Empty Trash",
+    "retentionPolicy": "Items in the trash will be permanently deleted after 30 days.",
+    "tabs": {
+      "all": "All",
+      "projects": "Projects",
+      "tickets": "PQRs",
+      "users": "Users"
+    },
+    "headers": {
+      "item": "Item",
+      "type": "Type",
+      "trashedOn": "Trashed On",
+      "expiresIn": "Expires In"
+    },
+    "types": {
+      "project": "Project",
+      "pqr": "PQR",
+      "user": "User"
+    },
+    "actions": {
+      "restore": "Restore",
+      "delete": "Delete"
+    },
+    "empty": "The trash is empty.",
+    "modal": {
+      "title": "Confirmation Required",
+      "body": "This action is irreversible and will permanently delete all items from the trash.",
+      "prompt": "To continue, type",
+      "confirmText": "EMPTY",
+      "placeholder": "EMPTY",
+      "checkboxLabel": "I understand this action cannot be undone."
+    }
+  },
+  "modals": {
+    "cancel": "Cancel",
+    "saveChanges": "Save Changes",
+    "create": "Create",
+    "confirm": "Confirm",
+    "close": "Close",
+    "pqrForm": {
+      "editTitle": "Edit PQR: {{id}}",
+      "newTitle": "New PQR",
+      "title": "Title",
+      "titleError": "Title is required.",
+      "project": "Project",
+      "projectError": "You must select a project.",
+      "assignee": "Assignee",
+      "assigneeError": "You must assign a responsible user.",
+      "reporter": "Reporter",
+      "po_cto": "PO / CTO",
+      "collaborators": "Collaborators (emails separated by comma)",
+      "status": "Status",
+      "priority": "Priority",
+      "type": "Type",
+      "sla": "SLA (hours)",
+      "slaError": "SLA must be a number between 1 and 168.",
+      "dueDate": "Due date: {{date}}",
+      "mainContract": "Main Contract",
+      "description": "Description",
+      "descriptionError": "Description is required.",
+      "attachments": "Attachments",
+      "dropzone": "Drag and drop your files here, or click to select.",
+      "dropzoneHint": "PDF, PNG, JPG, DOCX (Max 10MB)",
+      "savePQR": "Save PQR"
+    },
+    "projectForm": {
+      "editTitle": "Edit Project",
+      "newTitle": "New Project",
+      "name": "Project Name",
+      "owner": "Project Owner (Lead)",
+      "ownerError": "Project Name and Owner are required.",
+      "selectOwner": "Select Owner",
+      "description": "Description",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "defaultSLA": "Default SLA (hours)",
+      "status": "Status",
+      "createProject": "Create Project"
+    },
+    "userForm": {
+      "editTitle": "Edit User Profile",
+      "newTitle": "New User",
+      "fullName": "Full Name",
+      "email": "Email",
+      "nameAndEmailError": "Full Name and Email are required.",
+      "whatsapp": "WhatsApp",
+      "position": "Position",
+      "globalRole": "Global Role",
+      "activeUser": "Active User",
+      "assignProjects": "Assign Projects",
+      "noProjects": "No projects to assign.",
+      "createUser": "Create User"
+    },
+    "importSummary": {
+      "title": "Import Summary",
+      "completed": "Process completed.",
+      "created": "Tickets Created",
+      "errorsFound": "{{count}} errors found:",
+      "line": "Line {{line}}:"
+    }
+  },
+  "time": {
+    "dueInDays_one": "Due in {{count}}d",
+    "dueInDays_other": "Due in {{count}}d",
+    "dueInHours_one": "Due in {{count}}h",
+    "dueInHours_other": "Due in {{count}}h",
+    "overdueByDays_one": "Overdue by {{count}}d",
+    "overdueByDays_other": "Overdue by {{count}}d",
+    "overdueByHours_one": "Overdue by {{count}}h",
+    "overdueByHours_other": "Overdue by {{count}}h",
+    "expiresNow": "Expires now",
+    "expiresIn": "{{days}}d {{hours}}h"
+  },
+  "enums": {
+    "status": {
+      "Nuevo": "New",
+      "En proceso": "In Progress",
+      "Esperando cliente": "Waiting for Client",
+      "Resuelto": "Resolved",
+      "Cerrado": "Closed",
+      "No aplica": "N/A"
+    },
+    "priority": {
+      "Alta": "High",
+      "Media": "Medium",
+      "Baja": "Low"
+    },
+    "tipo": {
+      "Petición": "Petition",
+      "Queja": "Complaint",
+      "Reclamo": "Claim",
+      "Sugerencia": "Suggestion"
+    },
+    "canal": {
+      "Email": "Email",
+      "WhatsApp": "WhatsApp",
+      "App": "App",
+      "Otro": "Other"
+    },
+    "projectStatus": {
+      "Propuesto": "Proposed",
+      "Active": "Active",
+      "Archived": "Archived",
+      "On Hold": "On Hold"
+    },
+    "userRole": {
+      "Admin": "Admin",
+      "Leader": "Leader",
+      "Collaborator": "Collaborator",
+      "Client": "Client",
+      "Viewer": "Viewer"
+    }
+  },
+  "slaStatus": {
+    "overdue": "SLA Overdue",
+    "dueSoon": "Due Soon",
+    "onTime": "On Time"
+  }
+}

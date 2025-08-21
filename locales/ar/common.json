@@ -1,0 +1,744 @@
+
+{
+  "header": {
+    "tasks": "المهام",
+    "projects": "المشاريع",
+    "teams": "الفرق",
+    "reports": "التقارير",
+    "kanban": "كانبان",
+    "trash": "سلة المهملات",
+    "poweredBy": "بدعم من Gemini",
+    "projectsBreadcrumb": "المشاريع"
+  },
+  "lang": {
+    "es": "الإسبانية",
+    "en": "الإنجليزية",
+    "ar": "العربية"
+  },
+  "dashboard": {
+    "filter": {
+      "searchPlaceholder": "بحث بالمعرف، العنوان...",
+      "critical": "الحرجة",
+      "import": "استيراد CSV",
+      "export": "تصدير CSV",
+      "newTask": "مهمة جديدة",
+      "active": "النشطة",
+      "archived": "المؤرشفة",
+      "allArchived": "الكل (المؤرشفة)",
+      "allProjects": "كل المشاريع",
+      "allTypes": "كل الأنواع",
+      "allPriorities": "كل الأولويات",
+      "allStates": "كل الحالات"
+    },
+    "inboxTitle": "صندوق الوارد ({{count}})",
+    "noTasks": "لم يتم العثور على مهام بالمرشحات الحالية.",
+    "downloadTemplate": "تنزيل قالب CSV",
+    "noTicketSelected": "لم يتم تحديد مهمة",
+    "selectTicketPrompt": "يرجى تحديد مهمة من القائمة لعرض تفاصيلها.",
+    "createFirstTicket": "انقر على \"+ مهمة جديدة\" للبدء.",
+    "backToProject": "العودة إلى المشروع"
+  },
+  "notifications": {
+    "title": "الإشعارات",
+    "noNotifications": "لا توجد إشعارات جديدة.",
+    "unread": "تغييرات غير مقروءة",
+    "ticketMoved": "تم نقل المهمة {{ticketId}}.",
+    "ticketMovedText": "تم نقل المهمة {{ticketId}} من {{from}} إلى {{to}}.",
+    "ticketCreated": "تم إنشاء المهمة {{ticketId}} بنجاح.",
+    "ticketUpdated": "تم تحديث المهمة {{ticketId}}."
+  },
+  "kanban": {
+    "title": "لوحة كانبان",
+    "compactView": "عرض مضغوط",
+    "daysAgo": "قبل {{count}} يوم",
+    "card": {
+        "unassigned": "غير معين",
+        "edit": "تحرير",
+        "move": "نقل",
+        "comment": "تعليق",
+        "history": "السجل",
+        "delete": "حذف"
+    },
+    "moveModal": {
+      "title": "نقل المهمة إلى...",
+      "move": "نقل"
+    }
+  },
+  "move": {
+    "block": {
+      "role": "دورك ({{rol}}) لا يمكنه تنفيذ هذه الحركة.",
+      "checklist": "للتقدم من {{fromState}}، يجب إكمال قائمة التحقق: {{itemsPendientes}}.",
+      "skip": "لا يمكنك تخطي الحالات. تقدم خطوة بخطوة."
+    }
+  },
+  "workflow": {
+    "error": {
+      "title": "حركة غير صالحة",
+      "fromTerminal": "لا يمكن نقل تذكرة من حالة نهائية ('مغلق' أو 'لا ينطبق').",
+      "assigneeRequired": "مطلوب مسؤول لتكون التذكرة في حالة 'قيد الإنجاز' أو أي حالة لاحقة.",
+      "invalidState": "تتضمن العملية حالة غير صالحة أو غير معروفة.",
+      "jumpNotAllowed": "دورك لا يسمح بنقل تذكرة إلى حالة غير متسلسلة.",
+      "unknown": "حدث خطأ غير معروف أثناء محاولة نقل التذكرة.",
+      "noUser": "تعذر تحديد المستخدم الحالي.",
+      "collaboratorCannotMoveForward": "بصفتك المسؤول، لا يمكنك نقل المهام إلى الأمام. يرجى طلب مراجعة.",
+      "checklistIncomplete": "يجب إكمال قائمة التحقق للحالة الحالية قبل المضي قدمًا. يمكن للمسؤول تجاوز هذا الشرط على لوحة Kanban.",
+      "checklistIncompleteAdminRequired": "قائمة التحقق غير مكتملة. صلاحيات المسؤول مطلوبة لنقل هذه البطاقة.",
+      "permissionDenied": "ليس لديك إذن للقيام بهذا الإجراء."
+    },
+    "reason": {
+      "label": "سبب هذا التغيير",
+      "placeholder": "قدم شرحًا موجزًا...",
+      "notApplicable": "سبب التعيين كـ 'لا ينطبق'",
+      "backwardMove": "سبب إرجاع الحالة للخلف",
+      "jumpMove": "سبب هذه الحركة غير المتسلسلة"
+    },
+    "audit": {
+      "adminOverride": "تجاوز المسؤول: كانت قائمة التحقق غير مكتملة."
+    }
+  },
+  "pqrCard": {
+    "unassigned": "غير معين"
+  },
+  "pqrDetail": {
+    "editPQR": "تحرير المهمة",
+    "sendToTrash": "إرسال إلى سلة المهملات",
+    "unarchivePQR": "إلغاء أرشفة المهمة",
+    "archivePQR": "أرشفة المهمة",
+    "project": "المشروع",
+    "assignee": "المسؤول",
+    "reporter": "المبلغ",
+    "po_cto": "مدير المنتج / المدير التقني",
+    "collaborators": "المتعاونون",
+    "unassigned": "غير معين",
+    "na": "غير متاح",
+    "priority": "الأولوية",
+    "type": "النوع",
+    "channel": "القناة",
+    "receivedOn": "تاريخ الاستلام",
+    "dueDate": "تاريخ الاستحقاق",
+    "sla": "اتفاقية مستوى الخدمة",
+    "slaHours": "{{count}} ساعة",
+    "mainContract": "العقد الرئيسي",
+    "fullDescription": "الوصف الكامل",
+    "comments": "التعليقات والمناقشة",
+    "noComments": "لا توجد تعليقات بعد. كن أول من يضيف تعليقًا.",
+    "addCommentPlaceholder": "اكتب تعليقًا...",
+    "sendComment": "إرسال تعليق",
+    "auditHistory": "سجل التدقيق",
+    "you": "أنت",
+    "checklistForState": "قائمة التحقق – {{state}}",
+    "checklistNotCompleteError": "يجب إكمال جميع العناصر في قائمة التحقق الحالية قبل الانتقال إلى حالة جديدة.",
+    "attachEvidence": "إرفاق دليل",
+    "noAttachments": "لا توجد مرفقات.",
+    "histories": {
+      "attachments": "المرفقات",
+      "progress": "التقدم",
+      "audit": "التدقيق"
+    },
+    "header": {
+      "taskType": "نوع المهمة",
+      "area": "القسم/الإدارة",
+      "createdDate": "ت. الإنشاء",
+      "lastUpdate": "آخر تحديث",
+      "timeRemaining": "الوقت المتبقي",
+      "whatsappMenu": {
+        "share": "مشاركة الرابط",
+        "sendWhatsApp": "إرسال عبر واتساب",
+        "sendEmail": "إرسال عبر البريد",
+        "copy": "نسخ الرابط",
+        "generateImage": "إنشاء صورة مع رابط",
+        "shareError": "تعذر النسخ تلقائيًا. يرجى نسخ الرابط يدويًا.",
+        "clipboardSuccess": "تم نسخ الرابط إلى الحافظة."
+      }
+    },
+    "modal": {
+      "titleAttachments": "سجل المرفقات",
+      "titleProgress": "سجل التقدم",
+      "titleAudit": "سجل التدقيق والتعليقات",
+      "copy": "نسخ",
+      "download": "تنزيل",
+      "copied": "تم النسخ!"
+    }
+  },
+  "unifiedPanel": {
+    "title": "التتبع والتقدم",
+    "addCommentAction": "إضافة تعليق تقدم",
+    "updateChecklistAction": "تحديث قائمة التحقق",
+    "progressTitle": "تقدم المهمة",
+    "addCommentPlaceholder": "أضف تعليقًا حول التقدم...",
+    "logProgressBtn": "تسجيل التقدم",
+    "aiQuestionsTitle": "أسئلة إضافية (AI)",
+    "generateAIBtn": "إنشاء أسئلة",
+    "noAIQuestions": "لم يتم إنشاء أسئلة من الذكاء الاصطناعي لهذه الحالة.",
+    "criticalQuestion": "حرجة",
+    "answerPlaceholder": "اكتب إجابتك هنا...",
+    "saveAnswerBtn": "حفظ",
+    "noProgressHistory": "لم يتم تسجيل أي تقدم بعد.",
+    "advanceStateBtn": "طلب مراجعة / تغيير الحالة",
+    "errors": {
+      "cantAdvanceTitle": "لا يمكن التقدم بالحالة",
+      "progressNot100": "يجب أن يكون التقدم 100%.",
+      "checklistIncomplete": "عناصر قائمة التحقق التالية معلقة:",
+      "criticalQuestions": "لم يتم الرد على أسئلة الذكاء الاصطناعي الحرجة التالية:",
+      "aiErrorTitle": "خطأ في الذكاء الاصطناعي",
+      "aiErrorBody": "تعذر إنشاء الأسئلة. يرجى المحاولة مرة أخرى لاحقًا."
+    }
+  },
+  "checklist": {
+    "backlog": {
+      "desc": "وصف واضح للطلب",
+      "justify": "مبرر وسياق أولي",
+      "refs": "إرفاق مراجع (صور شاشة، ملخصات، روابط)",
+      "stakeholders": "تحديد المعنيين والمسؤول المحتمل",
+      "viability": "تقييم جدوى أولي"
+    },
+    "todo": {
+      "reqs": "متطلبات كاملة ومصدق عليها",
+      "docs": "إرفاق الوثائق الفنية والتجارية",
+      "assignee": "تعيين مسؤول رئيسي",
+      "estimate": "تقدير الموارد والوقت (ساعات)",
+      "leader_validation": "مصادقة القائد قبل البدء"
+    },
+    "inprogress": {
+      "time": "الوقت المقدر مسجل (يشمل هامش)",
+      "log": "سجل التقدم محدث",
+      "evidence": "إرفاق أدلة/صور تقدم",
+      "commits": "الإشارة إلى الكوميت/PRs/المستودعات (إن وجد)",
+      "risks": "تسجيل المعوقات أو المخاطر"
+    },
+    "review": {
+      "verify": "التحقق من المتطلبات",
+      "feedback": "ملاحظات المراجع مرفقة",
+      "adjustments": "قائمة التعديلات مكتملة",
+      "confirm": "تأكيد: جاهز للاختبار"
+    },
+    "test": {
+      "unit": "اختبارات الوحدة منفذة",
+      "integration": "الاختبارات التكاملية/الآلية منفذة",
+      "results": "نتائج الاختبارات مسجلة",
+      "evidence": "الأدلة مرفقة (صور، سجلات)",
+      "validation": "مصادقة: جاهز للعميل"
+    },
+    "waiting": {
+      "delivery": "التسليم الرسمي للعميل مسجل",
+      "feedback": "ملاحظات العميل مرفقة",
+      "improvements": "طلبات التحسين موثقة",
+      "approval": "تأكيد الموافقة أو التغييرات"
+    },
+    "closed": {
+      "satisfaction": "رضا العميل مؤكد",
+      "docs": "الوثائق النهائية والتسليمات مرفقة",
+      "invoice": "الفاتورة مسجلة (إن وجدت)",
+      "archive": "الأرشفة النهائية لجميع الوثائق"
+    },
+    "na": {
+      "justify": "مبرر الإلغاء موثق",
+      "notify": "إخطار المعنيين",
+      "archive": "أرشفة الوثائق ذات الصلة",
+      "close": "الإغلاق الإداري مسجل"
+    }
+  },
+  "gemini": {
+    "analysisTitle": "تحليل بالذكاء الاصطناعي",
+    "analyzing": "جارٍ التحليل...",
+    "error": "تعذر إنشاء الملخص. الرجاء المحاولة مرة أخرى.",
+    "regenerate": "إعادة إنشاء",
+    "generating": "جارٍ الإنشاء...",
+    "noDescription": "لا يوجد وصف لتحليله.",
+    "failoverGuidance": "Gemini غير متاح. يرجى تحديد 'ChatGPT' في الرأس وتوفير مفتاح API لاستخدام الذكاء الاصطناعي الاحتياطي."
+  },
+  "aiSelector": {
+    "revertingToGemini": "يتطلب مزود OpenAI مفتاح API. جارٍ الرجوع إلى Gemini."
+  },
+  "reports": {
+    "title": "التقارير",
+    "newReport": "تقرير جديد",
+    "manageSchedules": "إدارة الجدولة",
+    "filters": {
+      "dateRange": "النطاق الزمني",
+      "allTime": "كل الأوقات",
+      "status": "الحالة",
+      "allStates": "كل الحالات",
+      "assignee": "المسؤول",
+      "allAssignees": "كل المسؤولين",
+      "project": "المشروع",
+      "allProjects": "كل المشاريع",
+      "searchPlaceholder": "بحث في العنوان/الوصف...",
+      "dateFilterType": "تصفية التواريخ حسب",
+      "byCreationDate": "تاريخ الإنشاء",
+      "byClosingDate": "تاريخ الإغلاق"
+    },
+    "card": {
+      "edit": "تحرير",
+      "export": "تصدير",
+      "noData": "لا توجد بيانات متاحة للمرشحات الحالية.",
+      "unsupported": "هذا النوع من المخططات غير مدعوم بعد.",
+      "exportCSV": "تصدير إلى CSV",
+      "exportJSON": "تصدير إلى JSON",
+      "exportXLSX": "تصدير إلى XLSX",
+      "exportPDF": "تصدير إلى PDF",
+      "schedule": "جدولة"
+    },
+    "export": {
+      "headers": {
+        "metric": "المقياس",
+        "value": "القيمة"
+      }
+    },
+    "builder": {
+      "newTitle": "تقرير جديد",
+      "editTitle": "تحرير التقرير",
+      "name": "اسم التقرير",
+      "namePlaceholder": "مثال: 'التذاكر المغلقة أسبوعيًا'",
+      "widgetType": "نوع العرض",
+      "query": "المقياس المراد عرضه",
+      "createReport": "إنشاء تقرير",
+      "widgetTypes": {
+        "kpi": "مؤشر أداء رئيسي",
+        "bar": "مخطط شريطي",
+        "line": "مخطط خطي",
+        "pie": "مخطط دائري",
+        "table": "جدول"
+      }
+    },
+    "scheduler": {
+      "title": "جدولة التقارير",
+      "existing": "الجداول الحالية",
+      "noSchedules": "لم يتم إنشاء جداول بعد.",
+      "edit": "تحرير",
+      "delete": "حذف",
+      "formTitleNew": "جدول جديد",
+      "formTitleEdit": "تحرير الجدول",
+      "name": "اسم الجدول",
+      "namePlaceholder": "مثال: 'تقرير الإدارة اليومي'",
+      "frequency": "التكرار",
+      "time": "الوقت (محلي)",
+      "recipients": "المستلمون",
+      "recipientsPlaceholder": "email1@example.com, email2@example.com",
+      "format": "الصيغة",
+      "reportsToInclude": "التقارير المراد تضمينها",
+      "saveSchedule": "حفظ الجدول",
+      "createSchedule": "إنشاء جدول",
+      "frequencyOptions": {
+        "daily": "يومي",
+        "weekly": "أسبوعي (الاثنين)",
+        "monthly": "شهري (الأول)"
+      }
+    },
+    "preconfigured": {
+      "pqrByStatus": "المهام حسب الحالة",
+      "slaCompliance": "الامتثال لاتفاقية مستوى الخدمة",
+      "backlogAging": "تقادم قائمة المهام",
+      "loadByAssignee": "العبء حسب المسؤول",
+      "responseTime": "متوسط وقت الاستجابة الأول",
+      "throughput": "الإنتاجية اليومية (المهام المغلقة)",
+      "burnDownChart": "مخطط الإنجاز"
+    },
+    "queries": {
+      "pqr_by_status": "عدد المهام حسب الحالة",
+      "sla_compliance": "مؤشرات أداء الامتثال لـ SLA",
+      "sla_compliance_on_time_closed": "في الوقت المحدد (مغلق)",
+      "sla_compliance_late_closed": "متأخر (مغلق)",
+      "sla_compliance_open_overdue": "مفتوح ومتأخر",
+      "sla_compliance_compliance": "نسبة الامتثال %",
+      "backlog_aging": "تقادم المهام المفتوحة",
+      "load_by_assignee": "المهام المفتوحة حسب المسؤول",
+      "first_response_time_avg": "متوسط وقت الاستجابة الأول",
+      "throughput": "المهام المغلقة يوميًا",
+      "burn_down_chart": "مخطط إنجاز المهام المفتوحة"
+    },
+    "history": {
+      "title": "سجل التقارير",
+      "viewHistory": "عرض السجل",
+      "backToReports": "العودة إلى التقارير",
+      "clearHistory": "مسح السجل",
+      "clearConfirmTitle": "هل تريد مسح السجل؟",
+      "clearConfirmBody": "هل أنت متأكد من أنك تريد حذف كل سجل التقارير بشكل دائم؟ لا يمكن التراجع عن هذا الإجراء.",
+      "noHistory": "لم يتم إنشاء أي تقارير بعد.",
+      "filterByDate": "تصفية حسب التاريخ",
+      "filterByReport": "تصفية حسب التقرير",
+      "allReports": "كل التقارير",
+      "headers": {
+        "date": "التاريخ",
+        "report": "التقرير",
+        "format": "الصيغة",
+        "triggeredBy": "تم تفعيله بواسطة",
+        "actions": "الإجراءات"
+      },
+      "reDownload": "إعادة التنزيل",
+      "triggered": {
+        "manual": "يدوي",
+        "scheduled": "مجدول"
+      }
+    },
+    "pagination": {
+        "previous": "السابق",
+        "next": "التالي",
+        "page": "صفحة {{current}} من {{total}}"
+    },
+    "burndown": {
+        "ideal": "المثالي (الخطة)",
+        "real": "الفعلي (التقدم)"
+    }
+  },
+  "projects": {
+    "list": {
+      "title": "المشاريع",
+      "newProject": "مشروع جديد",
+      "headers": {
+        "name": "اسم المشروع",
+        "owner": "المالك",
+        "status": "الحالة",
+        "pqrs": "المهام",
+        "lastActivity": "آخر نشاط",
+        "actions": "الإجراءات"
+      },
+      "noProjects": "لا توجد مشاريع. أنشئ الأول.",
+      "actionsMenu": {
+        "view": "عرض",
+        "edit": "تحرير",
+        "archive": "أرشفة",
+        "restore": "استعادة",
+        "duplicate": "تكرار",
+        "sendToTrash": "إرسال إلى سلة المهملات",
+        "disabledTrashTooltip": "يمكن حذف المشاريع المؤرشفة التي لا تحتوي على مهام فقط."
+      }
+    },
+    "detail": {
+      "back": "رجوع",
+      "edit": "تحرير",
+      "copyKey": "نسخ المفتاح",
+      "kpis": {
+        "total": "إجمالي المهام",
+        "open": "مفتوحة",
+        "closed": "مغلقة",
+        "overdue": "متأخرة",
+        "na": "غير متاح"
+      },
+      "tabs": {
+        "team": "الفريق",
+        "pqrs": "المهام",
+        "config": "الإعدادات"
+      },
+      "noTeamMembers": "لا يوجد أعضاء في هذا المشروع.",
+      "config": {
+        "owner": "مالك المشروع",
+        "defaultSLA": "اتفاقية مستوى الخدمة الافتراضية",
+        "startDate": "تاريخ البدء",
+        "endDate": "تاريخ الانتهاء",
+        "description": "الوصف",
+        "notSet": "غير محدد"
+      }
+    }
+  },
+  "teams": {
+    "title": "المستخدمون والفرق",
+    "newUser": "مستخدم جديد",
+    "headers": {
+      "name": "الاسم",
+      "globalRole": "الدور العام",
+      "status": "الحالة",
+      "projects": "المشاريع",
+      "actions": "الإجراءات"
+    },
+    "statusActive": "نشط",
+    "statusInactive": "غير نشط",
+    "edit": "تحرير",
+    "deleteDisabledTooltip": "لا يمكن حذف آخر مسؤول نشط.",
+    "noUsers": "لا يوجد مستخدمون. أنشئ الأول."
+  },
+  "trash": {
+    "title": "سلة المحذوفات",
+    "emptyTrash": "إفراغ سلة المحذوفات",
+    "retentionPolicy": "سيتم حذف العناصر الموجودة في سلة المحذوفات نهائيًا بعد 30 يومًا.",
+    "tabs": {
+      "all": "الكل",
+      "projects": "المشاريع",
+      "tickets": "المهام",
+      "users": "المستخدمون"
+    },
+    "headers": {
+      "item": "العنصر",
+      "type": "النوع",
+      "trashedOn": "تاريخ الحذف",
+      "expiresIn": "ينتهي في"
+    },
+    "types": {
+      "project": "مشروع",
+      "pqr": "مهمة",
+      "user": "مستخدم"
+    },
+    "actions": {
+      "restore": "استعادة",
+      "delete": "حذف"
+    },
+    "empty": "سلة المحذوفات فارغة.",
+    "modal": {
+      "title": "التأكيد مطلوب",
+      "body": "هذا الإجراء لا يمكن التراجع عنه وسيحذف جميع العناصر من سلة المحذوفات نهائيًا.",
+      "prompt": "للمتابعة، اكتب",
+      "confirmText": "إفراغ",
+      "placeholder": "إفراغ",
+      "checkboxLabel": "أفهم أن هذا الإجراء لا يمكن التراجع عنه."
+    }
+  },
+  "modals": {
+    "cancel": "إلغاء",
+    "saveChanges": "حفظ التغييرات",
+    "create": "إنشاء",
+    "confirm": "تأكيد",
+    "close": "إغلاق",
+    "alert": {
+      "incompleteChecklistTitle": "قائمة التحقق غير مكتملة",
+      "close": "حسناً"
+    },
+    "apiKey": {
+      "title": "مفتاح API لـ {{provider}}",
+      "description": "يرجى إدخال مفتاح API الخاص بك لـ {{provider}}. سيتم تخزين المفتاح في ذاكرة الجلسة وسيتم فقده عند إغلاق علامة التبويب.",
+      "label": "مفتاح API",
+      "placeholder": "sk-...",
+      "success": "تم حفظ مفتاح {{provider}} بنجاح."
+    },
+    "pqrForm": {
+      "editTitle": "تحرير المهمة: {{id}}",
+      "newTitle": "مهمة جديدة",
+      "title": "العنوان",
+      "titleError": "العنوان مطلوب.",
+      "project": "المشروع",
+      "projectError": "يجب تحديد مشروع.",
+      "assignee": "المسؤول",
+      "assigneeError": "يجب تعيين مسؤول.",
+      "reporter": "المبلغ",
+      "po_cto": "مدير المنتج / المدير التقني",
+      "collaborators": "المتعاونون (بريد إلكتروني مفصول بفاصلة)",
+      "status": "الحالة",
+      "priority": "الأولوية",
+      "type": "نوع الطلب",
+      "taskType": "نوع المهمة",
+      "channel": "القناة",
+      "sla": "SLA (ساعات)",
+      "slaError": "يجب أن يكون SLA رقمًا موجبًا.",
+      "dueDate": "تاريخ الاستحقاق: {{date}}",
+      "mainContract": "العقد الرئيسي",
+      "description": "الوصف",
+      "descriptionError": "الوصف مطلوب.",
+      "attachments": "المرفقات",
+      "dropzone": "اسحب وأفلت ملفاتك هنا، أو انقر للتحديد.",
+      "dropzoneHint": "PDF, PNG, JPG, DOCX (الحد الأقصى 10 ميجابايت)",
+      "saveTask": "حفظ المهمة"
+    },
+    "projectForm": {
+      "editTitle": "تحرير المشروع",
+      "newTitle": "مشروع جديد",
+      "name": "اسم المشروع",
+      "owner": "مالك المشروع (قائد)",
+      "ownerError": "اسم المشروع والمالك مطلوبان.",
+      "selectOwner": "تحديد المالك",
+      "description": "الوصف",
+      "startDate": "تاريخ البدء",
+      "endDate": "تاريخ الانتهاء",
+      "defaultSLA": "SLA الافتراضي (ساعات)",
+      "status": "الحالة",
+      "createProject": "إنشاء مشروع"
+    },
+    "userForm": {
+      "editTitle": "تحرير ملف المستخدم",
+      "newTitle": "مستخدم جديد",
+      "fullName": "الاسم الكامل",
+      "email": "البريد الإلكتروني",
+      "nameAndEmailError": "الاسم الكامل والبريد الإلكتروني مطلوبان.",
+      "whatsapp": "واتساب",
+      "position": "المنصب",
+      "globalRole": "الدور العام",
+      "activeUser": "مستخدم نشط",
+      "assignProjects": "تعيين المشاريع",
+      "noProjects": "لا توجد مشاريع لتعيينها.",
+      "createUser": "إنشاء مستخدم"
+    },
+    "importSummary": {
+      "title": "ملخص الاستيراد",
+      "completed": "اكتملت العملية.",
+      "created": "التذاكر التي تم إنشاؤها",
+      "errorsFound": "تم العثور على {{count}} أخطاء:",
+      "line": "السطر {{line}}:"
+    },
+    "modal": {
+        "justification": {
+            "title": "التبرير مطلوب"
+        },
+        "override": {
+            "title": "تجاوز المسؤول"
+        }
+    }
+  },
+  "time": {
+    "dueInDays_zero": "يستحق في {{count}} يوم",
+    "dueInDays_one": "يستحق في يوم واحد",
+    "dueInDays_two": "يستحق في يومين",
+    "dueInDays_few": "يستحق في {{count}} أيام",
+    "dueInDays_many": "يستحق في {{count}} يومًا",
+    "dueInDays_other": "يستحق في {{count}} يوم",
+    "dueInHours_zero": "يستحق في {{count}} ساعة",
+    "dueInHours_one": "يستحق في ساعة واحدة",
+    "dueInHours_two": "يستحق في ساعتين",
+    "dueInHours_few": "يستحق في {{count}} ساعات",
+    "dueInHours_many": "يستحق في {{count}} ساعة",
+    "dueInHours_other": "يستحق في {{count}} ساعة",
+    "overdueByDays_zero": "متأخر {{count}} يوم",
+    "overdueByDays_one": "متأخر يوم واحد",
+    "overdueByDays_two": "متأخر يومين",
+    "overdueByDays_few": "متأخر {{count}} أيام",
+    "overdueByDays_many": "متأخر {{count}} يومًا",
+    "overdueByDays_other": "متأخر {{count}} يوم",
+    "overdueByHours_zero": "متأخر {{count}} ساعة",
+    "overdueByHours_one": "متأخر ساعة واحدة",
+    "overdueByHours_two": "متأخر ساعتين",
+    "overdueByHours_few": "متأخر {{count}} ساعات",
+    "overdueByHours_many": "متأخر {{count}} ساعة",
+    "overdueByHours_other": "متأخر {{count}} ساعة",
+    "expiresNow": "ينتهي الآن",
+    "expiresIn": "{{days}}ي {{hours}}س"
+  },
+  "enums": {
+    "status": {
+      "Backlog": "قائمة المهام",
+      "ToDo": "قيد التنفيذ",
+      "InProgress": "قيد الإنجاز",
+      "Review": "قيد المراجعة",
+      "Test": "قيد الاختبار",
+      "WaitingForClient": "في انتظار العميل",
+      "ReleasedClosed": "تم إصداره / مغلق",
+      "NotApplicable": "لا ينطبق"
+    },
+    "priority": {
+      "Alta": "عالية",
+      "Media": "متوسطة",
+      "Baja": "منخفضة"
+    },
+    "tipo": {
+      "Petición": "التماس",
+      "Queja": "شكوى",
+      "Reclamo": "مطالبة",
+      "Sugerencia": "اقتراح"
+    },
+    "canal": {
+      "Email": "البريد الإلكتروني",
+      "WhatsApp": "واتساب",
+      "App": "التطبيق",
+      "Otro": "آخر"
+    },
+    "projectStatus": {
+      "Propuesto": "مقترح",
+      "Active": "نشط",
+      "Archived": "مؤرشف",
+      "On Hold": "معلق"
+    },
+    "userRole": {
+      "Admin": "مدير",
+      "Líder": "قائد",
+      "Colaborador": "متعاون",
+      "Client": "عميل",
+      "Viewer": "مشاهد"
+    },
+    "impacto": {
+      "Critico": "حرج",
+      "Alto": "عالي",
+      "Medio": "متوسط",
+      "Bajo": "منخفض"
+    },
+    "area": {
+      "Backend": "الخلفية",
+      "Frontend": "الواجهة الأمامية",
+      "Solidity": "سوليديتي",
+      "QA": "ضمان الجودة",
+      "Diseno": "تصميم",
+      "General": "عام"
+    }
+  },
+  "taskTypes": {
+    "PQR": "طلب",
+    "ODT": "أمر عمل",
+    "Bug": "علة",
+    "Mejora": "تحسين",
+    "Alerta": "تنبيه"
+  },
+  "taskTypeTooltips": {
+    "PQR": "الطلبات، الشكاوى، المطالبات، الاقتراحات. تدفق مرتبط بالدعم والعملاء.",
+    "ODT": "أوامر العمل الداخلية، المعينة من قبل القادة أو مالكي المنتج.",
+    "Bug": "الحوادث المكتشفة في ضمان الجودة أو الإنتاج. مشاكل فنية يجب حلها.",
+    "Mejora": "طلبات ميزات جديدة أو تحسينات على النظام.",
+    "Alerta": "إشعارات آلية ينشئها النظام (مثل انتهاء الصلاحية، نقص التحديثات)."
+  },
+  "slaStatus": {
+    "overdue": "متأخر",
+    "dueSoon": "قريب الاستحقاق",
+    "onTime": "في الوقت المحدد"
+  },
+  "tooltips": {
+    "notifications": "عرض الإشعارات",
+    "toggleLanguage": "تغيير اللغة",
+    "userAvatar": "ملف المستخدم",
+    "criticalFilter": "إظهار التذاكر المتأخرة فقط",
+    "importCSV": "استيراد التذاكر من ملف CSV",
+    "exportCSV": "تصدير العرض الحالي إلى ملف CSV",
+    "newTask": "إنشاء مهمة جديدة",
+    "downloadCSVTemplate": "تنزيل قالب CSV لاستيراد التذاكر",
+    "regenerateSummary": "إعادة إنشاء ملخص الذكاء الاصطناعي",
+    "editTicket": "تحرير تفاصيل هذه المهمة",
+    "shareTicket": "مشاركة هذه المهمة",
+    "shareViaWhatsapp": "مشاركة ملخص ورابط عبر واتساب",
+    "shareViaEmail": "مشاركة رابط عبر البريد الإلكتروني",
+    "copyURL": "نسخ رابط المهمة إلى الحافظة",
+    "generateImage": "تنزيل صورة ملخص المهمة",
+    "viewAttachments": "عرض سجل المرفقات",
+    "viewProgress": "عرض سجل التقدم",
+    "viewAudit": "عرض سجل التدقيق والتعليقات",
+    "closeModal": "إغلاق هذه النافذة",
+    "copyHistory": "نسخ السجل إلى الحافظة",
+    "downloadHistory": "تنزيل السجل كملف نصي",
+    "addProgressComment": "الانتقال إلى قسم تعليقات التقدم",
+    "updateChecklist": "الانتقال إلى قسم قائمة التحقق",
+    "logProgress": "حفظ التقدم والتعليق الحالي",
+    "generateAIQuestions": "إنشاء أسئلة سياقية بالذكاء الاصطناعي",
+    "advanceState": "إكمال المرحلة الحالية والانتقال إلى التالية",
+    "sendComment": "نشر تعليقك",
+    "newProject": "إنشاء مشروع جديد",
+    "projectActions": "المزيد من خيارات المشروع",
+    "viewProjectDetails": "عرض تفاصيل المشروع",
+    "editProject": "تحرير إعدادات المشروع",
+    "archiveProject": "أرشفة هذا المشروع",
+    "restoreProject": "استعادة هذا المشروع من الأرشيف",
+    "duplicateProject": "إنشاء نسخة من هذا المشروع",
+    "trashProject": "إرسال هذا المشروع إلى سلة المهملات",
+    "trashProjectDisabled": "يمكن فقط إرسال المشاريع المؤرشفة التي لا تحتوي على مهام إلى سلة المهملات.",
+    "backToProjects": "العودة إلى قائمة المشاريع",
+    "editProjectDetail": "تحرير تفاصيل هذا المشروع",
+    "newUser": "إنشاء مستخدم جديد",
+    "editUser": "تحرير تفاصيل المستخدم",
+    "trashUser": "إرسال المستخدم إلى سلة المهملات",
+    "trashUserDisabled": "لا يمكن إرسال آخر مسؤول نشط إلى سلة المهملات.",
+    "emptyTrash": "حذف جميع العناصر في سلة المهملات نهائيًا",
+    "restoreItem": "استعادة هذا العنصر",
+    "deletePermanently": "حذف هذا العنصر إلى الأبد",
+    "cancel": "إلغاء وإغلاق النافذة",
+    "saveChanges": "حفظ التغييرات التي تم إجراؤها",
+    "create": "إنشاء العنصر الجديد",
+    "confirmEmptyTrash": "تأكيد وإفراغ سلة المهملات",
+    "gotIt": "إغلاق هذا التنبيه",
+    "saveAnswer": "حفظ إجابتك",
+    "deleteAttachment": "حذف المرفق",
+    "uploadAttachment": "تحميل الملفات",
+    "selectTask": "عرض تفاصيل {{taskId}}",
+    "selectProject": "عرض تفاصيل {{projectName}}",
+    "selectUser": "تحرير تفاصيل {{userName}}",
+    "reportScheduled": "هذا التقرير جزء من جدول زمني نشط",
+    "enlargeReport": "تكبير التقرير",
+    "liftCard": "اضغط على Space أو Enter لرفع البطاقة لتحريكها",
+    "dropCard": "اضغط على Space أو Enter لإسقاط البطاقة. استخدم مفاتيح الأسهم للتحريك.",
+    "cancelMove": "اضغط على Escape لإلغاء الحركة",
+    "translateComment": "ترجمة بالذكاء الاصطناعي",
+    "showTranslation": "عرض الترجمة",
+    "showOriginal": "عرض الأصل (es)",
+    "translationError": "تعذر ترجمة النص."
+  }
+}

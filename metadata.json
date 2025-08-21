@@ -1,0 +1,5 @@
+{
+  "name": "Pushtrack",
+  "description": "Pushtrack – Gestión ágil de PQRs. A comprehensive dashboard for managing and tracking Peticiones, Quejas, Reclamos y Sugerencias (PQRS). It allows users to view, filter, and analyze tickets, with an AI-powered feature to summarize ticket descriptions for quick understanding.",
+  "requestFramePermissions": []
+}

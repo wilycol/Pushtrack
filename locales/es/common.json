@@ -1,0 +1,728 @@
+
+{
+  "header": {
+    "tasks": "Tareas",
+    "projects": "Proyectos",
+    "teams": "Equipos",
+    "reports": "Reportes",
+    "kanban": "Kanban",
+    "trash": "Papelera",
+    "poweredBy": "Powered by Gemini",
+    "projectsBreadcrumb": "Proyectos"
+  },
+  "lang": {
+    "es": "Español",
+    "en": "Inglés",
+    "ar": "Árabe"
+  },
+  "dashboard": {
+    "filter": {
+      "searchPlaceholder": "Buscar por ID, título...",
+      "critical": "Críticos",
+      "import": "Importar CSV",
+      "export": "Exportar CSV",
+      "newTask": "Nueva Tarea",
+      "active": "Activos",
+      "archived": "Archivados",
+      "allArchived": "Todos (Arch.)",
+      "allProjects": "Todos los Proyectos",
+      "allTypes": "Todos los Tipos",
+      "allPriorities": "Todas las Prioridades",
+      "allStates": "Todos los Estados"
+    },
+    "inboxTitle": "Bandeja de Entrada ({{count}})",
+    "noTasks": "No se encontraron tareas con los filtros actuales.",
+    "downloadTemplate": "Descargar Plantilla CSV",
+    "noTicketSelected": "No hay Tarea Seleccionada",
+    "selectTicketPrompt": "Por favor, selecciona una tarea de la lista para ver sus detalles.",
+    "createFirstTicket": "Haz clic en \"+ Nueva Tarea\" para comenzar.",
+    "backToProject": "Volver al Proyecto"
+  },
+  "notifications": {
+    "title": "Notificaciones",
+    "noNotifications": "No hay notificaciones nuevas.",
+    "unread": "Cambios sin leer",
+    "ticketMoved": "Ticket {{ticketId}} movido.",
+    "ticketMovedText": "El ticket {{ticketId}} se movió de {{from}} a {{to}}.",
+    "ticketCreated": "Ticket {{ticketId}} creado exitosamente.",
+    "ticketUpdated": "Ticket {{ticketId}} actualizado."
+  },
+  "kanban": {
+    "title": "Tablero Kanban",
+    "compactView": "Vista Compacta",
+    "daysAgo": "hace {{count}}d",
+    "card": {
+        "unassigned": "Sin asignar",
+        "edit": "Editar",
+        "move": "Mover",
+        "comment": "Comentar",
+        "history": "Historial",
+        "delete": "Eliminar"
+    },
+    "moveModal": {
+      "title": "Mover Tarea a...",
+      "move": "Mover"
+    }
+  },
+  "move": {
+    "block": {
+      "role": "Tu rol ({{rol}}) no puede realizar este movimiento.",
+      "checklist": "Para avanzar desde {{fromState}}, completa el checklist: {{itemsPendientes}}.",
+      "skip": "No puedes saltar estados. Avanza paso a paso."
+    }
+  },
+  "workflow": {
+    "error": {
+      "title": "Movimiento Inválido",
+      "fromTerminal": "No se puede mover una tarea desde un estado terminal ('Lanzado / Cerrado' o 'No Aplica').",
+      "assigneeRequired": "Se requiere un responsable para que una tarea esté en 'En Progreso' o cualquier estado posterior.",
+      "invalidState": "La transición involucra un estado inválido o desconocido.",
+      "jumpNotAllowed": "Tu rol no permite mover una tarea a un estado no secuencial.",
+      "unknown": "Ocurrió un error desconocido al intentar mover la tarea.",
+      "noUser": "No se pudo identificar al usuario actual.",
+      "collaboratorCannotMoveForward": "Como Responsable, no puedes mover tareas hacia adelante. Por favor, solicita una revisión.",
+      "checklistIncomplete": "El checklist del estado actual debe estar completo para poder avanzar. Un Administrador puede anular este requisito en el tablero Kanban.",
+      "checklistIncompleteAdminRequired": "El checklist no está completo. Se necesitan privilegios de Administrador para mover esta tarjeta.",
+      "permissionDenied": "No tienes permiso para realizar esta acción."
+    },
+    "reason": {
+      "label": "Motivo de este cambio",
+      "placeholder": "Proporcione una breve explicación...",
+      "notApplicable": "Motivo para marcar como No Aplica",
+      "backwardMove": "Motivo para retroceder el estado",
+      "jumpMove": "Motivo de este movimiento no secuencial"
+    },
+    "audit": {
+      "adminOverride": "Anulación de admin: El checklist estaba incompleto."
+    }
+  },
+  "pqrCard": {
+    "unassigned": "Sin asignar"
+  },
+  "pqrDetail": {
+    "editPQR": "Editar Tarea",
+    "sendToTrash": "Enviar a la papelera",
+    "unarchivePQR": "Desarchivar Tarea",
+    "archivePQR": "Archivar Tarea",
+    "project": "Proyecto",
+    "assignee": "Responsable",
+    "reporter": "Informador",
+    "po_cto": "PO / CTO",
+    "collaborators": "Colaboradores",
+    "unassigned": "Sin asignar",
+    "na": "N/A",
+    "priority": "Prioridad",
+    "type": "Tipo",
+    "channel": "Canal",
+    "receivedOn": "Recibido En",
+    "dueDate": "Vence En",
+    "sla": "SLA",
+    "slaHours": "{{count}} horas",
+    "mainContract": "Contrato Principal",
+    "fullDescription": "Descripción Completa",
+    "comments": "Comentarios y Discusión",
+    "noComments": "No hay comentarios todavía. Sé el primero en añadir uno.",
+    "addCommentPlaceholder": "Escribe un comentario...",
+    "sendComment": "Enviar comentario",
+    "auditHistory": "Historial de Auditoría",
+    "you": "TÚ",
+    "checklistForState": "Checklist – {{state}}",
+    "checklistNotCompleteError": "Debes completar todos los ítems del checklist actual antes de cambiar de estado.",
+    "attachEvidence": "Adjuntar Evidencia",
+    "noAttachments": "No hay archivos adjuntos.",
+    "histories": {
+      "attachments": "Adjuntos",
+      "progress": "Progreso",
+      "audit": "Auditoría"
+    },
+    "header": {
+      "taskType": "Tipo de Tarea",
+      "area": "Área/Depto",
+      "createdDate": "F. Creación",
+      "lastUpdate": "Últ. Actualización",
+      "timeRemaining": "Tiempo Restante",
+      "whatsappMenu": {
+        "share": "Compartir enlace",
+        "sendWhatsApp": "Enviar por WhatsApp",
+        "sendEmail": "Enviar por Email",
+        "copy": "Copiar URL",
+        "generateImage": "Generar imagen con enlace",
+        "shareError": "No se pudo copiar automáticamente. Por favor, copie el enlace manualmente.",
+        "clipboardSuccess": "Enlace copiado al portapapeles."
+      }
+    },
+    "modal": {
+      "titleAttachments": "Historial de Adjuntos",
+      "titleProgress": "Historial de Progreso",
+      "titleAudit": "Historial de Auditoría y Comentarios",
+      "copy": "Copiar",
+      "download": "Descargar",
+      "copied": "¡Copiado!"
+    }
+  },
+  "unifiedPanel": {
+    "title": "Seguimiento y Avance",
+    "addCommentAction": "Añadir comentario de progreso",
+    "updateChecklistAction": "Actualizar checklist",
+    "progressTitle": "Progreso de la Tarea",
+    "addCommentPlaceholder": "Añadir comentario sobre el avance...",
+    "logProgressBtn": "Registrar Progreso",
+    "aiQuestionsTitle": "Preguntas Adicionales (IA)",
+    "generateAIBtn": "Generar Preguntas",
+    "noAIQuestions": "No se han generado preguntas de IA para este estado.",
+    "criticalQuestion": "Crítica",
+    "answerPlaceholder": "Escribe tu respuesta aquí...",
+    "saveAnswerBtn": "Guardar",
+    "noProgressHistory": "Aún no se ha registrado ningún progreso.",
+    "advanceStateBtn": "Solicitar Revisión / Cambiar Estado",
+    "errors": {
+      "cantAdvanceTitle": "No se puede Avanzar de Estado",
+      "progressNot100": "El progreso debe estar al 100%.",
+      "checklistIncomplete": "Los siguientes ítems del checklist están pendientes:",
+      "criticalQuestions": "Las siguientes preguntas críticas de la IA no han sido respondidas:",
+      "aiErrorTitle": "Error de IA",
+      "aiErrorBody": "No se pudieron generar las preguntas. Por favor, inténtelo más tarde."
+    }
+  },
+  "checklist": {
+    "backlog": {
+      "desc": "Descripción clara de la solicitud",
+      "justify": "Justificación y contexto inicial",
+      "refs": "Adjuntar referencias (capturas, briefs, enlaces)",
+      "stakeholders": "Identificar stakeholders y posible responsable",
+      "viability": "Evaluación preliminar de viabilidad"
+    },
+    "todo": {
+      "reqs": "Requerimientos completos y validados",
+      "docs": "Adjuntar documentación técnica y de negocio",
+      "assignee": "Asignar responsable principal",
+      "estimate": "Estimar recursos y tiempo (horas)",
+      "leader_validation": "Validación de líder antes de iniciar"
+    },
+    "inprogress": {
+      "time": "Tiempo estimado registrado (incluye buffer)",
+      "log": "Bitácora de progreso actualizada",
+      "evidence": "Adjuntar evidencias/capturas de avance",
+      "commits": "Referenciar commits/PRs/repositorios (si aplica)",
+      "risks": "Registro de bloqueos o riesgos"
+    },
+    "review": {
+      "verify": "Verificación contra requerimientos",
+      "feedback": "Feedback del revisor adjunto",
+      "adjustments": "Lista de ajustes completada",
+      "confirm": "Confirmación: listo para pruebas"
+    },
+    "test": {
+      "unit": "Pruebas unitarias ejecutadas",
+      "integration": "Pruebas de integración/automatizadas ejecutadas",
+      "results": "Resultados de pruebas registrados",
+      "evidence": "Evidencia adjunta (capturas, logs)",
+      "validation": "Validación: listo para cliente"
+    },
+    "waiting": {
+      "delivery": "Entrega oficial a cliente registrada",
+      "feedback": "Feedback del cliente adjunto",
+      "improvements": "Solicitudes de mejora documentadas",
+      "approval": "Confirmación de aprobación o cambios"
+    },
+    "closed": {
+      "satisfaction": "Satisfacción del cliente confirmada",
+      "docs": "Documentación final y entregables adjuntos",
+      "invoice": "Factura registrada (si aplica)",
+      "archive": "Archivo final de toda la documentación"
+    },
+    "na": {
+      "justify": "Justificación de cancelación documentada",
+      "notify": "Notificación a stakeholders",
+      "archive": "Archivo de documentos relevantes",
+      "close": "Cierre administrativo registrado"
+    }
+  },
+  "gemini": {
+    "analysisTitle": "Análisis con IA",
+    "analyzing": "Analizando...",
+    "error": "No se pudo generar el resumen. Intente de nuevo.",
+    "regenerate": "Volver a generar",
+    "generating": "Generando...",
+    "noDescription": "No hay descripción para analizar.",
+    "failoverGuidance": "Gemini no está disponible. Por favor, selecciona 'ChatGPT' en la cabecera y proporciona una clave de API para usar la IA de respaldo."
+  },
+  "aiSelector": {
+    "revertingToGemini": "El proveedor OpenAI requiere una clave de API. Volviendo a Gemini."
+  },
+  "reports": {
+    "title": "Reportes",
+    "newReport": "Nuevo Reporte",
+    "manageSchedules": "Gestionar Programaciones",
+    "filters": {
+      "dateRange": "Rango de Fechas",
+      "allTime": "Desde siempre",
+      "status": "Estado",
+      "allStates": "Todos los Estados",
+      "assignee": "Responsable",
+      "allAssignees": "Todos los Responsables",
+      "project": "Proyecto",
+      "allProjects": "Todos los Proyectos",
+      "searchPlaceholder": "Buscar en título/descripción...",
+      "dateFilterType": "Filtrar fechas por",
+      "byCreationDate": "Fecha de Creación",
+      "byClosingDate": "Fecha de Cierre"
+    },
+    "card": {
+      "edit": "Editar",
+      "export": "Exportar",
+      "noData": "No hay datos disponibles para los filtros actuales.",
+      "unsupported": "Este tipo de gráfico aún no es compatible.",
+      "exportCSV": "Exportar a CSV",
+      "exportJSON": "Exportar a JSON",
+      "exportXLSX": "Exportar a XLSX",
+      "exportPDF": "Exportar a PDF",
+      "schedule": "Programar"
+    },
+    "export": {
+      "headers": {
+        "metric": "Métrica",
+        "value": "Valor"
+      }
+    },
+    "builder": {
+      "newTitle": "Nuevo Reporte",
+      "editTitle": "Editar Reporte",
+      "name": "Nombre del Reporte",
+      "namePlaceholder": "Ej: 'Tickets Cerrados Semanales'",
+      "widgetType": "Tipo de Visualización",
+      "query": "Métrica a Mostrar",
+      "createReport": "Crear Reporte",
+      "widgetTypes": {
+        "kpi": "KPI",
+        "bar": "Gráfico de Barras",
+        "line": "Gráfico de Líneas",
+        "pie": "Gráfico Circular",
+        "table": "Tabla"
+      }
+    },
+    "scheduler": {
+      "title": "Programar Reportes",
+      "existing": "Programaciones Existentes",
+      "noSchedules": "Aún no se han creado programaciones.",
+      "edit": "Editar",
+      "delete": "Eliminar",
+      "formTitleNew": "Nueva Programación",
+      "formTitleEdit": "Editar Programación",
+      "name": "Nombre de la Programación",
+      "namePlaceholder": "Ej: 'Reporte Diario de Gestión'",
+      "frequency": "Frecuencia",
+      "time": "Hora (Local)",
+      "recipients": "Destinatarios",
+      "recipientsPlaceholder": "email1@example.com, email2@example.com",
+      "format": "Formato",
+      "reportsToInclude": "Reportes a Incluir",
+      "saveSchedule": "Guardar Programación",
+      "createSchedule": "Crear Programación",
+      "frequencyOptions": {
+        "daily": "Diario",
+        "weekly": "Semanal (Lunes)",
+        "monthly": "Mensual (Día 1)"
+      }
+    },
+    "preconfigured": {
+      "pqrByStatus": "Tareas por Estado",
+      "slaCompliance": "Cumplimiento de SLA",
+      "backlogAging": "Antigüedad del Backlog",
+      "loadByAssignee": "Carga por Responsable",
+      "responseTime": "Tpo. Prom. 1ª Respuesta",
+      "throughput": "Productividad Diaria (Tareas Cerradas)",
+      "burnDownChart": "Gráfico de Avance (Burn Down)"
+    },
+    "queries": {
+      "pqr_by_status": "Conteo de Tareas por Estado",
+      "sla_compliance": "KPIs de Cumplimiento de SLA",
+      "sla_compliance_on_time_closed": "A Tiempo (Cerrados)",
+      "sla_compliance_late_closed": "Tarde (Cerrados)",
+      "sla_compliance_open_overdue": "Abiertos y Vencidos",
+      "sla_compliance_compliance": "% Cumplimiento",
+      "backlog_aging": "Antigüedad de Tareas Abiertas",
+      "load_by_assignee": "Tareas Abiertas por Responsable",
+      "first_response_time_avg": "Tiempo Promedio de Primera Respuesta",
+      "throughput": "Tareas Cerradas por Día",
+      "burn_down_chart": "Gráfico de Avance de Tareas Abiertas"
+    },
+    "history": {
+      "title": "Historial de Reportes",
+      "viewHistory": "Ver Historial",
+      "backToReports": "Volver a Reportes",
+      "clearHistory": "Limpiar Historial",
+      "clearConfirmTitle": "¿Limpiar Historial?",
+      "clearConfirmBody": "¿Estás seguro de que deseas eliminar permanentemente todo el historial de reportes? Esta acción no se puede deshacer.",
+      "noHistory": "Aún no se ha generado ningún reporte.",
+      "filterByDate": "Filtrar por fecha",
+      "filterByReport": "Filtrar por reporte",
+      "allReports": "Todos los Reportes",
+      "headers": {
+        "date": "Fecha",
+        "report": "Reporte",
+        "format": "Formato",
+        "triggeredBy": "Iniciado Por",
+        "actions": "Acciones"
+      },
+      "reDownload": "Re-descargar",
+      "triggered": {
+        "manual": "Manual",
+        "scheduled": "Programado"
+      }
+    },
+    "pagination": {
+      "previous": "Anterior",
+      "next": "Siguiente",
+      "page": "Página {{current}} de {{total}}"
+    },
+    "burndown": {
+      "ideal": "Ideal (plan)",
+      "real": "Real (progreso)"
+    }
+  },
+  "projects": {
+    "list": {
+      "title": "Proyectos",
+      "newProject": "Nuevo Proyecto",
+      "headers": {
+        "name": "Nombre del Proyecto",
+        "owner": "Owner",
+        "status": "Estado",
+        "pqrs": "Tareas",
+        "lastActivity": "Última Actividad",
+        "actions": "Acciones"
+      },
+      "noProjects": "No hay proyectos. Crea el primero.",
+      "actionsMenu": {
+        "view": "Ver",
+        "edit": "Editar",
+        "archive": "Archivar",
+        "restore": "Restaurar",
+        "duplicate": "Duplicar",
+        "sendToTrash": "Enviar a Papelera",
+        "disabledTrashTooltip": "Solo se pueden eliminar proyectos archivados y sin tareas."
+      }
+    },
+    "detail": {
+      "back": "Volver",
+      "edit": "Editar",
+      "copyKey": "Copiar Key",
+      "kpis": {
+        "total": "Tareas Totales",
+        "open": "Abiertas",
+        "closed": "Cerradas",
+        "overdue": "SLA Vencido",
+        "na": "No Aplica"
+      },
+      "tabs": {
+        "team": "Equipo",
+        "pqrs": "Tareas",
+        "config": "Configuración"
+      },
+      "noTeamMembers": "No hay miembros en este proyecto.",
+      "config": {
+        "owner": "Owner del Proyecto",
+        "defaultSLA": "SLA por Defecto",
+        "startDate": "Fecha de Inicio",
+        "endDate": "Fecha de Fin",
+        "description": "Descripción",
+        "notSet": "No especificada"
+      }
+    }
+  },
+  "teams": {
+    "title": "Usuarios y Equipos",
+    "newUser": "Nuevo Usuario",
+    "headers": {
+      "name": "Nombre",
+      "globalRole": "Rol Global",
+      "status": "Estado",
+      "projects": "Proyectos",
+      "actions": "Acciones"
+    },
+    "statusActive": "Activo",
+    "statusInactive": "Inactivo",
+    "edit": "Editar",
+    "deleteDisabledTooltip": "No se puede eliminar al último administrador activo.",
+    "noUsers": "No hay usuarios. Crea el primero."
+  },
+  "trash": {
+    "title": "Papelera de Reciclaje",
+    "emptyTrash": "Vaciar Papelera",
+    "retentionPolicy": "Los elementos en la papelera se eliminarán permanentemente después de 30 días.",
+    "tabs": {
+      "all": "Todos",
+      "projects": "Proyectos",
+      "tickets": "Tareas",
+      "users": "Usuarios"
+    },
+    "headers": {
+      "item": "Elemento",
+      "type": "Tipo",
+      "trashedOn": "Enviado el",
+      "expiresIn": "Expira en"
+    },
+    "types": {
+      "project": "Proyecto",
+      "pqr": "Tarea",
+      "user": "Usuario"
+    },
+    "actions": {
+      "restore": "Restaurar",
+      "delete": "Eliminar"
+    },
+    "empty": "La papelera está vacía.",
+    "modal": {
+      "title": "Confirmación Requerida",
+      "body": "Esta acción es irreversible y eliminará todos los elementos de la papelera permanentemente.",
+      "prompt": "Para continuar, escribe",
+      "confirmText": "VACIAR",
+      "placeholder": "VACIAR",
+      "checkboxLabel": "Entiendo que esta acción no se puede deshacer."
+    }
+  },
+  "modals": {
+    "cancel": "Cancelar",
+    "saveChanges": "Guardar Cambios",
+    "create": "Crear",
+    "confirm": "Confirmar",
+    "close": "Cerrar",
+    "alert": {
+      "incompleteChecklistTitle": "Checklist Incompleto",
+      "close": "Entendido"
+    },
+    "apiKey": {
+      "title": "Clave de API de {{provider}}",
+      "description": "Por favor, introduce tu clave de API para {{provider}}. La clave se guardará en la memoria de la sesión y se perderá al cerrar la pestaña.",
+      "label": "Clave de API",
+      "placeholder": "sk-...",
+      "success": "Clave de {{provider}} guardada correctamente."
+    },
+    "pqrForm": {
+      "editTitle": "Editar Tarea: {{id}}",
+      "newTitle": "Nueva Tarea",
+      "title": "Título",
+      "titleError": "El título es obligatorio.",
+      "project": "Proyecto",
+      "projectError": "Debe seleccionar un proyecto.",
+      "assignee": "Responsable",
+      "assigneeError": "Debe asignar un responsable.",
+      "reporter": "Informador",
+      "po_cto": "PO / CTO",
+      "collaborators": "Colaboradores (emails separados por coma)",
+      "status": "Estado",
+      "priority": "Prioridad",
+      "type": "Tipo de PQR",
+      "taskType": "Tipo de Tarea",
+      "channel": "Canal",
+      "sla": "SLA (horas)",
+      "slaError": "El SLA debe ser un número positivo.",
+      "dueDate": "Vence: {{date}}",
+      "mainContract": "Contrato Principal",
+      "description": "Descripción",
+      "descriptionError": "La descripción es obligatoria.",
+      "attachments": "Adjuntos",
+      "dropzone": "Arrastra y suelta aquí tus archivos o haz clic para seleccionarlos.",
+      "dropzoneHint": "PDF, PNG, JPG, DOCX (Máx 10MB)",
+      "saveTask": "Guardar Tarea"
+    },
+    "projectForm": {
+      "editTitle": "Editar Proyecto",
+      "newTitle": "Nuevo Proyecto",
+      "name": "Nombre del Proyecto",
+      "owner": "Owner del Proyecto (Líder)",
+      "ownerError": "Nombre del proyecto y Owner son obligatorios.",
+      "selectOwner": "Seleccionar Owner",
+      "description": "Descripción",
+      "startDate": "Fecha de Inicio",
+      "endDate": "Fecha de Fin",
+      "defaultSLA": "SLA por Defecto (horas)",
+      "status": "Estado",
+      "createProject": "Crear Proyecto"
+    },
+    "userForm": {
+      "editTitle": "Editar Ficha de Usuario",
+      "newTitle": "Nuevo Usuario",
+      "fullName": "Nombre Completo",
+      "email": "Email",
+      "nameAndEmailError": "Nombre completo y Email son obligatorios.",
+      "whatsapp": "WhatsApp",
+      "position": "Cargo",
+      "globalRole": "Rol Global",
+      "activeUser": "Usuario Activo",
+      "assignProjects": "Asignar Proyectos",
+      "noProjects": "No hay proyectos para asignar.",
+      "createUser": "Crear Usuario"
+    },
+    "importSummary": {
+      "title": "Resumen de Importación",
+      "completed": "Proceso completado.",
+      "created": "Tickets Creados",
+      "errorsFound": "Se encontraron {{count}} errores:",
+      "line": "Línea {{line}}:"
+    },
+    "modal": {
+        "justification": {
+            "title": "Justificación Requerida"
+        },
+        "override": {
+            "title": "Anulación de Administrador"
+        }
+    }
+  },
+  "time": {
+    "dueInDays_one": "Vence en {{count}}d",
+    "dueInDays_other": "Vence en {{count}}d",
+    "dueInHours_one": "Vence en {{count}}h",
+    "dueInHours_other": "Vence en {{count}}h",
+    "overdueByDays_one": "Vencido por {{count}}d",
+    "overdueByDays_other": "Vencido por {{count}}d",
+    "overdueByHours_one": "Vencido por {{count}}h",
+    "overdueByHours_other": "Vencido por {{count}}h",
+    "expiresNow": "Expira ahora",
+    "expiresIn": "{{days}}d {{hours}}h"
+  },
+  "enums": {
+    "status": {
+      "Backlog": "Backlog",
+      "ToDo": "Por Hacer",
+      "InProgress": "En Progreso",
+      "Review": "En Revisión",
+      "Test": "En Pruebas",
+      "WaitingForClient": "Esperando Cliente",
+      "ReleasedClosed": "Lanzado / Cerrado",
+      "NotApplicable": "No Aplica"
+    },
+    "priority": {
+      "Alta": "Alta",
+      "Media": "Media",
+      "Baja": "Baja"
+    },
+    "tipo": {
+      "Petición": "Petición",
+      "Queja": "Queja",
+      "Reclamo": "Reclamo",
+      "Sugerencia": "Sugerencia"
+    },
+    "canal": {
+      "Email": "Email",
+      "WhatsApp": "WhatsApp",
+      "App": "App",
+      "Otro": "Otro"
+    },
+    "projectStatus": {
+      "Propuesto": "Propuesto",
+      "Active": "Activo",
+      "Archived": "Archivado",
+      "On Hold": "En Espera"
+    },
+    "userRole": {
+      "Admin": "Admin",
+      "Líder": "Líder",
+      "Colaborador": "Colaborador",
+      "Client": "Cliente",
+      "Viewer": "Visualizador"
+    },
+    "impacto": {
+        "Critico": "Crítico",
+        "Alto": "Alto",
+        "Medio": "Medio",
+        "Bajo": "Bajo"
+    },
+    "area": {
+        "Backend": "Backend",
+        "Frontend": "Frontend",
+        "Solidity": "Solidity",
+        "QA": "QA",
+        "Diseno": "Diseño",
+        "General": "General"
+    }
+  },
+  "taskTypes": {
+    "PQR": "PQR",
+    "ODT": "Orden de Trabajo",
+    "Bug": "Bug",
+    "Mejora": "Mejora",
+    "Alerta": "Alerta"
+  },
+  "taskTypeTooltips": {
+    "PQR": "Peticiones, Quejas, Reclamos, Sugerencias. Flujo asociado a soporte y clientes.",
+    "ODT": "Órdenes de Trabajo internas, asignadas por líderes o dueños de producto.",
+    "Bug": "Incidencias detectadas en QA o producción. Problemas técnicos a resolver.",
+    "Mejora": "Solicitudes de nuevas funcionalidades o mejoras al sistema.",
+    "Alerta": "Notificaciones automáticas generadas por el sistema (ej: vencimientos, falta de actualización)."
+  },
+  "slaStatus": {
+    "overdue": "SLA Vencido",
+    "dueSoon": "Vence Pronto",
+    "onTime": "En Tiempo"
+  },
+  "tooltips": {
+    "notifications": "Ver notificaciones",
+    "toggleLanguage": "Cambiar idioma",
+    "userAvatar": "Perfil de usuario",
+    "criticalFilter": "Mostrar solo tickets con SLA vencido",
+    "importCSV": "Importar tickets desde un archivo CSV",
+    "exportCSV": "Exportar la vista actual a un archivo CSV",
+    "newTask": "Crear una nueva tarea",
+    "downloadCSVTemplate": "Descargar una plantilla CSV para importar tickets",
+    "regenerateSummary": "Volver a generar resumen con IA",
+    "editTicket": "Editar los detalles de esta tarea",
+    "shareTicket": "Compartir esta tarea",
+    "shareViaWhatsapp": "Compartir un resumen y enlace por WhatsApp",
+    "shareViaEmail": "Compartir un enlace por Email",
+    "copyURL": "Copiar URL de la tarea al portapapeles",
+    "generateImage": "Descargar una imagen resumen de la tarea",
+    "viewAttachments": "Ver historial de adjuntos",
+    "viewProgress": "Ver historial de progreso",
+    "viewAudit": "Ver registro de auditoría y comentarios",
+    "closeModal": "Cerrar esta ventana",
+    "copyHistory": "Copiar historial al portapapeles",
+    "downloadHistory": "Descargar historial como archivo de texto",
+    "addProgressComment": "Ir a la sección de comentarios de progreso",
+    "updateChecklist": "Ir a la sección de checklist",
+    "logProgress": "Guardar el progreso y comentario actual",
+    "generateAIQuestions": "Generar preguntas contextuales con IA",
+    "advanceState": "Completar la etapa actual y pasar a la siguiente",
+    "sendComment": "Publicar tu comentario",
+    "newProject": "Crear un nuevo proyecto",
+    "projectActions": "Más opciones de proyecto",
+    "viewProjectDetails": "Ver detalles del proyecto",
+    "editProject": "Editar configuración del proyecto",
+    "archiveProject": "Archivar este proyecto",
+    "restoreProject": "Restaurar este proyecto de los archivos",
+    "duplicateProject": "Crear una copia de este proyecto",
+    "trashProject": "Enviar este proyecto a la papelera",
+    "trashProjectDisabled": "Solo los proyectos archivados sin tareas pueden ser enviados a la papelera.",
+    "backToProjects": "Volver a la lista de proyectos",
+    "editProjectDetail": "Editar los detalles de este proyecto",
+    "newUser": "Crear un nuevo usuario",
+    "editUser": "Editar detalles del usuario",
+    "trashUser": "Enviar usuario a la papelera",
+    "trashUserDisabled": "No se puede enviar al último administrador activo a la papelera.",
+    "emptyTrash": "Eliminar permanentemente todos los elementos de la papelera",
+    "restoreItem": "Restaurar este elemento",
+    "deletePermanently": "Eliminar este elemento para siempre",
+    "cancel": "Cancelar y cerrar la ventana",
+    "saveChanges": "Guardar los cambios realizados",
+    "create": "Crear el nuevo elemento",
+    "confirmEmptyTrash": "Confirmar y vaciar la papelera",
+    "gotIt": "Cerrar esta alerta",
+    "saveAnswer": "Guardar tu respuesta",
+    "deleteAttachment": "Eliminar adjunto",
+    "uploadAttachment": "Subir archivos",
+    "selectTask": "Ver detalles de {{taskId}}",
+    "selectProject": "Ver detalles de {{projectName}}",
+    "selectUser": "Editar detalles de {{userName}}",
+    "reportScheduled": "Este reporte es parte de una programación activa",
+    "enlargeReport": "Ampliar reporte",
+    "liftCard": "Presiona Espacio o Enter para levantar la tarjeta y moverla",
+    "dropCard": "Presiona Espacio o Enter para soltar la tarjeta. Usa las flechas para mover.",
+    "cancelMove": "Presiona Escape para cancelar el movimiento",
+    "translateComment": "Traducir con IA",
+    "showTranslation": "Mostrar traducción",
+    "showOriginal": "Mostrar original (es)",
+    "translationError": "No se pudo traducir el texto."
+  }
+}
