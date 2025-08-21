@@ -9,7 +9,6 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
-// Validación: si falta algo lo verás en consola
 for (const [k, v] of Object.entries(firebaseConfig)) {
   if (!v) console.error(`Firebase config missing: ${k}`);
 }
@@ -21,6 +20,5 @@ setPersistence(auth, browserLocalPersistence).catch((error) => {
   console.error("Firebase persistence error:", error.code, error.message);
 });
 
-// Admin inicial
 export const ADMIN_EMAIL = "admin@pushtrack.io";
 export const ADMIN_PASSWORD = "changeThisPassword123";
