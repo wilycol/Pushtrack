@@ -1,32 +1,26 @@
-import { initializeApp } from "firebase/app";
-import {
-  getAuth,
-  setPersistence,
-  browserLocalPersistence,
-} from "firebase/auth";
+// src/services/firebase.ts
+import { initializeApp, getApps } from "firebase/app";
+import { getAuth, setPersistence, browserLocalPersistence } from "firebase/auth";
 
-// --- CONFIGURATION ---
-// IMPORTANT: Replace with your Firebase project's configuration.
-// You can find this in your Firebase project settings.
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  appId: "YOUR_APP_ID",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
-// These are the credentials for the initial admin account.
-// Use the "Ensure Admin" button on the login page once to create it.
-// IMPORTANT: The admin should change this password after the first login.
-export const ADMIN_EMAIL = "admin@pushtrack.io";
-export const ADMIN_PASSWORD = "changeThisPassword123";
+// Validación: si falta algo lo verás en consola
+for (const [k, v] of Object.entries(firebaseConfig)) {
+  if (!v) console.error(`Firebase config missing: ${k}`);
+}
 
-// --- INITIALIZATION ---
-const app = initializeApp(firebaseConfig);
+const app = getApps().length ? getApps()[0] : initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 
-// Set session persistence to keep users logged in
-setPersistence(auth, browserLocalPersistence)
-  .catch((error) => {
-    console.error("Firebase persistence error:", error.code, error.message);
-  });
+setPersistence(auth, browserLocalPersistence).catch((error) => {
+  console.error("Firebase persistence error:", error.code, error.message);
+});
+
+// Admin inicial
+export const ADMIN_EMAIL = "admin@pushtrack.io";
+export const ADMIN_PASSWORD = "changeThisPassword123";
