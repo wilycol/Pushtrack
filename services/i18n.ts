@@ -48,22 +48,22 @@ const resources = {
           "createdDate": "F. Creación",
           "lastUpdate": "Últ. Actualización",
           "timeRemaining": "Tiempo Restante",
-                  "whatsappMenu": {
-          "send": "Enviar",
-          "sendl": "Enviar Link",
-          "copy": "Copiar",
-          "genel": "General",
-          "sendWhatsApp": "Enviar WhatsApp",
-          "sendEmail": "Enviar Email",
-          "generateImage": "Generar Imagen",
-          "clipboardSuccess": "Copiado al portapapeles",
-          "shareError": "Error al compartir"
-        },
-        "modal": {
-          "titleAudit": "Auditoría",
-          "copy": "Copiar",
-          "download": "Descargar"
-        }
+          "whatsappMenu": {
+            "send": "Enviar",
+            "sendl": "Enviar Link",
+            "copy": "Copiar",
+            "genel": "General",
+            "sendWhatsApp": "Enviar WhatsApp",
+            "sendEmail": "Enviar Email",
+            "generateImage": "Generar Imagen",
+            "clipboardSuccess": "Copiado al portapapeles",
+            "shareError": "Error al compartir"
+          },
+          "modal": {
+            "titleAudit": "Auditoría",
+            "copy": "Copiar",
+            "download": "Descargar"
+          }
         },
         "histories": {
           "attachments": "Adjuntos",
