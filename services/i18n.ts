@@ -678,7 +678,11 @@ const resources = {
         }
       },
       "taskTypes": {
-        "Bug": "خطأ"
+        "Bug": "خطأ",
+        "PQR": "PQR",
+        "ODT": "ODT",
+        "Mejora": "تحسين",
+        "Alerta": "تنبيه"
       },
       "modals": {
         "modal": {
