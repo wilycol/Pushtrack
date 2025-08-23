@@ -55,7 +55,11 @@ const resources = {
           "audit": "Auditoría"
         },
         "checklistForState": "Lista de Verificación para el Estado",
-        "attachEvidence": "Adjuntar Evidencia"
+        "attachEvidence": "Adjuntar Evidencia",
+        "comments": "Comentarios",
+        "noComments": "No hay comentarios aún",
+        "addCommentPlaceholder": "Escribe un comentario...",
+        "yc": "YC"
       },
       "enums": {
         "priority": {
@@ -67,7 +71,10 @@ const resources = {
           "Lanzado / Cerrado": "Lanzado / Cerrado",
           "En Pruebas": "En Pruebas",
           "En Progreso": "En Progreso",
-          "Backlog": "Backlog"
+          "Backlog": "Backlog",
+          "En Revisión": "En Revisión",
+          "Por Hacer": "Por Hacer",
+          "Esperando Cliente": "Esperando Cliente"
         },
         "area": {
           "Frontend": "Frontend"
@@ -89,7 +96,8 @@ const resources = {
         "confirm": "Confirmar",
         "saveChanges": "Guardar Cambios",
         "pqrForm": {
-          "dropzone": "Arrastra archivos aquí o haz clic para seleccionar"
+          "dropzone": "Arrastra archivos aquí o haz clic para seleccionar",
+          "dropzoneHint": "Archivos soportados: PDF, DOC, DOCX, JPG, PNG"
         },
         "apiKey": {
           "title": "Configurar Clave API",
@@ -106,7 +114,13 @@ const resources = {
       },
       "unifiedPanel": {
         "addCommentPlaceholder": "Agregar comentario...",
-        "logProgressBtn": "Registrar Progreso"
+        "logProgressBtn": "Registrar Progreso",
+        "title": "Panel de Progreso",
+        "progressTitle": "Progreso de la Tarea",
+        "aiQuestionsTitle": "Preguntas de IA",
+        "generateAIBtn": "Generar IA",
+        "noAIQuestions": "No hay preguntas de IA disponibles",
+        "advanceStateBtn": "Avanzar Estado"
       },
       "checklist": {
         "inprogress": {
@@ -115,6 +129,13 @@ const resources = {
           "evidence": "Adjuntar evidencia de trabajo",
           "commits": "Verificar commits realizados",
           "risks": "Identificar riesgos y bloqueos"
+        },
+        "todo": {
+          "reqs": "Revisar requisitos",
+          "docs": "Actualizar documentación",
+          "assignee": "Asignar responsable",
+          "estimate": "Estimar tiempo",
+          "leader_validation": "Validación del líder"
         }
       },
       "kanban": {
@@ -170,7 +191,14 @@ const resources = {
         "preconfigured": {
           "pqrByStatus": "PQRS por Estado",
           "slaCompliance": "Cumplimiento SLA",
-          "burnDownChart": "Gráfico de Burndown"
+          "burnDownChart": "Gráfico de Burndown",
+          "responseTime": "Tiempo de Respuesta",
+          "throughput": "Rendimiento",
+          "backlogAging": "Antigüedad del Backlog",
+          "loadByAssignee": "Carga por Asignado"
+        },
+        "filters": {
+          "by": "por"
         },
         "burndown": {
           "real": "Real",
@@ -264,7 +292,11 @@ const resources = {
           "audit": "Audit"
         },
         "checklistForState": "Checklist for State",
-        "attachEvidence": "Attach Evidence"
+        "attachEvidence": "Attach Evidence",
+        "comments": "Comments",
+        "noComments": "No comments yet",
+        "addCommentPlaceholder": "Write a comment...",
+        "yc": "YC"
       },
       "enums": {
         "priority": {
@@ -276,7 +308,10 @@ const resources = {
           "Lanzado / Cerrado": "Released / Closed",
           "En Pruebas": "In Testing",
           "En Progreso": "In Progress",
-          "Backlog": "Backlog"
+          "Backlog": "Backlog",
+          "En Revisión": "In Review",
+          "Por Hacer": "To Do",
+          "Esperando Cliente": "Waiting for Client"
         },
         "area": {
           "Frontend": "Frontend"
@@ -295,7 +330,8 @@ const resources = {
         "confirm": "Confirm",
         "saveChanges": "Save Changes",
         "pqrForm": {
-          "dropzone": "Drag files here or click to select"
+          "dropzone": "Drag files here or click to select",
+          "dropzoneHint": "Supported files: PDF, DOC, DOCX, JPG, PNG"
         },
         "apiKey": {
           "title": "Configure API Key",
@@ -312,7 +348,13 @@ const resources = {
       },
       "unifiedPanel": {
         "addCommentPlaceholder": "Add comment...",
-        "logProgressBtn": "Log Progress"
+        "logProgressBtn": "Log Progress",
+        "title": "Progress Panel",
+        "progressTitle": "Task Progress",
+        "aiQuestionsTitle": "AI Questions",
+        "generateAIBtn": "Generate AI",
+        "noAIQuestions": "No AI questions available",
+        "advanceStateBtn": "Advance State"
       },
       "checklist": {
         "inprogress": {
@@ -321,6 +363,13 @@ const resources = {
           "evidence": "Attach work evidence",
           "commits": "Verify commits made",
           "risks": "Identify risks and blockers"
+        },
+        "todo": {
+          "reqs": "Review requirements",
+          "docs": "Update documentation",
+          "assignee": "Assign responsible",
+          "estimate": "Estimate time",
+          "leader_validation": "Leader validation"
         }
       },
       "kanban": {
@@ -376,7 +425,14 @@ const resources = {
         "preconfigured": {
           "pqrByStatus": "PQRS by Status",
           "slaCompliance": "SLA Compliance",
-          "burnDownChart": "Burndown Chart"
+          "burnDownChart": "Burndown Chart",
+          "responseTime": "Response Time",
+          "throughput": "Throughput",
+          "backlogAging": "Backlog Aging",
+          "loadByAssignee": "Load by Assignee"
+        },
+        "filters": {
+          "by": "by"
         },
         "burndown": {
           "real": "Real",
@@ -470,7 +526,11 @@ const resources = {
           "audit": "المراجعة"
         },
         "checklistForState": "قائمة التحقق للحالة",
-        "attachEvidence": "إرفاق الأدلة"
+        "attachEvidence": "إرفاق الأدلة",
+        "comments": "التعليقات",
+        "noComments": "لا توجد تعليقات بعد",
+        "addCommentPlaceholder": "اكتب تعليقاً...",
+        "yc": "YC"
       },
       "enums": {
         "priority": {
@@ -482,7 +542,10 @@ const resources = {
           "Lanzado / Cerrado": "تم الإطلاق / مغلق",
           "En Pruebas": "قيد الاختبار",
           "En Progreso": "قيد التنفيذ",
-          "Backlog": "قائمة الانتظار"
+          "Backlog": "قائمة الانتظار",
+          "En Revisión": "قيد المراجعة",
+          "Por Hacer": "للقيام به",
+          "Esperando Cliente": "بانتظار العميل"
         },
         "area": {
           "Frontend": "الواجهة الأمامية"
@@ -501,7 +564,8 @@ const resources = {
         "confirm": "تأكيد",
         "saveChanges": "حفظ التغييرات",
         "pqrForm": {
-          "dropzone": "اسحب الملفات هنا أو انقر للاختيار"
+          "dropzone": "اسحب الملفات هنا أو انقر للاختيار",
+          "dropzoneHint": "الملفات المدعومة: PDF, DOC, DOCX, JPG, PNG"
         },
         "apiKey": {
           "title": "تكوين مفتاح API",
@@ -518,7 +582,13 @@ const resources = {
       },
       "unifiedPanel": {
         "addCommentPlaceholder": "إضافة تعليق...",
-        "logProgressBtn": "تسجيل التقدم"
+        "logProgressBtn": "تسجيل التقدم",
+        "title": "لوحة التقدم",
+        "progressTitle": "تقدم المهمة",
+        "aiQuestionsTitle": "أسئلة الذكاء الاصطناعي",
+        "generateAIBtn": "إنشاء الذكاء الاصطناعي",
+        "noAIQuestions": "لا توجد أسئلة ذكاء اصطناعي متاحة",
+        "advanceStateBtn": "تقدم الحالة"
       },
       "checklist": {
         "inprogress": {
@@ -527,6 +597,13 @@ const resources = {
           "evidence": "إرفاق دليل العمل",
           "commits": "التحقق من الالتزامات المنجزة",
           "risks": "تحديد المخاطر والعقبات"
+        },
+        "todo": {
+          "reqs": "مراجعة المتطلبات",
+          "docs": "تحديث الوثائق",
+          "assignee": "تعيين المسؤول",
+          "estimate": "تقدير الوقت",
+          "leader_validation": "تحقق القائد"
         }
       },
       "kanban": {
@@ -582,7 +659,14 @@ const resources = {
         "preconfigured": {
           "pqrByStatus": "PQRS حسب الحالة",
           "slaCompliance": "الامتثال لـ SLA",
-          "burnDownChart": "مخطط Burndown"
+          "burnDownChart": "مخطط Burndown",
+          "responseTime": "وقت الاستجابة",
+          "throughput": "الإنتاجية",
+          "backlogAging": "شيخوخة قائمة الانتظار",
+          "loadByAssignee": "الحمل حسب المكلف"
+        },
+        "filters": {
+          "by": "حسب"
         },
         "burndown": {
           "real": "فعلي",
