@@ -328,7 +328,19 @@ const resources = {
       "trash": {
         "title": "Papelera",
         "retentionPolicy": "Política de Retención: Los elementos se eliminan permanentemente después de 30 días",
-        "empty": "La papelera está vacía"
+        "empty": "La papelera está vacía",
+        "Tabs": {
+          "All": "Todos",
+          "Projects": "Proyectos",
+          "Tickets": "Tickets",
+          "Users": "Usuarios"
+        },
+        "HEADERS": {
+          "ITEM": "Elemento",
+          "TYPE": "Tipo",
+          "TRASHEDON": "Eliminado el",
+          "EXPIRESIN": "Expira en"
+        }
       },
       "Trash": {
         "Tabs": {
@@ -659,7 +671,19 @@ const resources = {
         "trash": {
           "title": "Trash",
           "retentionPolicy": "Retention Policy: Items are permanently deleted after 30 days",
-          "empty": "Trash is empty"
+          "empty": "Trash is empty",
+          "Tabs": {
+            "All": "All",
+            "Projects": "Projects",
+            "Tickets": "Tickets",
+            "Users": "Users"
+          },
+          "HEADERS": {
+            "ITEM": "Item",
+            "TYPE": "Type",
+            "TRASHEDON": "Trashed On",
+            "EXPIRESIN": "Expires In"
+          }
         },
         "Trash": {
           "Tabs": {
@@ -987,17 +1011,13 @@ const resources = {
           "trash": {
             "title": "سلة المهملات",
             "retentionPolicy": "سياسة الاحتفاظ: يتم حذف العناصر نهائياً بعد 30 يوماً",
-            "empty": "سلة المهملات فارغة"
-          },
-          "Trash": {
+            "empty": "سلة المهملات فارغة",
             "Tabs": {
               "All": "الكل",
               "Projects": "المشاريع",
               "Tickets": "التذاكر",
               "Users": "المستخدمين"
-            }
-          },
-          "TRASH": {
+            },
             "HEADERS": {
               "ITEM": "العنصر",
               "TYPE": "النوع",
