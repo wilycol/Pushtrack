@@ -53,7 +53,9 @@ const resources = {
           "attachments": "Adjuntos",
           "progress": "Progreso",
           "audit": "Auditoría"
-        }
+        },
+        "checklistForState": "Lista de Verificación para el Estado",
+        "attachEvidence": "Adjuntar Evidencia"
       },
       "enums": {
         "priority": {
@@ -63,10 +65,15 @@ const resources = {
         },
         "status": {
           "Lanzado / Cerrado": "Lanzado / Cerrado",
-          "En Pruebas": "En Pruebas"
+          "En Pruebas": "En Pruebas",
+          "En Progreso": "En Progreso",
+          "Backlog": "Backlog"
         },
         "area": {
           "Frontend": "Frontend"
+        },
+        "projectStatus": {
+          "Active": "Activo"
         }
       },
       "taskTypes": {
@@ -79,12 +86,129 @@ const resources = {
           }
         },
         "cancel": "Cancelar",
-        "confirm": "Confirmar"
+        "confirm": "Confirmar",
+        "saveChanges": "Guardar Cambios",
+        "pqrForm": {
+          "dropzone": "Arrastra archivos aquí o haz clic para seleccionar"
+        },
+        "apiKey": {
+          "title": "Configurar Clave API",
+          "description": "Ingresa tu clave API para habilitar las funciones avanzadas",
+          "label": "Clave API",
+          "placeholder": "sk-..."
+        }
       },
       "workflow": {
         "reason": {
           "label": "Justificación",
           "placeholder": "Por favor, proporciona una justificación para esta acción..."
+        }
+      },
+      "unifiedPanel": {
+        "addCommentPlaceholder": "Agregar comentario...",
+        "logProgressBtn": "Registrar Progreso"
+      },
+      "checklist": {
+        "inprogress": {
+          "time": "Registrar tiempo dedicado",
+          "log": "Actualizar log de progreso",
+          "evidence": "Adjuntar evidencia de trabajo",
+          "commits": "Verificar commits realizados",
+          "risks": "Identificar riesgos y bloqueos"
+        }
+      },
+      "kanban": {
+        "title": "Tablero Kanban",
+        "compactView": "Vista Compacta",
+        "daysAgo": "días atrás"
+      },
+      "projects": {
+        "list": {
+          "title": "Lista de Proyectos",
+          "newProject": "Nuevo Proyecto"
+        }
+      },
+      "PROJECTS": {
+        "LIST": {
+          "HEADERS": {
+            "NAME": "Nombre",
+            "OWNER": "Propietario",
+            "STATUS": "Estado",
+            "PQRS": "PQRS",
+            "LASTACTIVITY": "Última Actividad"
+          }
+        }
+      },
+      "teams": {
+        "title": "Gestión de Equipos",
+        "newUser": "Nuevo Usuario",
+        "statusActive": "Activo",
+        "edit": "Editar"
+      },
+      "TEAMS": {
+        "HEADERS": {
+          "NAME": "Nombre",
+          "GLOBALROLE": "Rol Global",
+          "STATUS": "Estado",
+          "PROJECTS": "Proyectos"
+        }
+      },
+      "reports": {
+        "title": "Reportes y Analytics",
+        "history": {
+          "viewHistory": "Ver Historial"
+        },
+        "manageSchedules": "Gestionar Programaciones",
+        "newReport": "Nuevo Reporte",
+        "filters": {
+          "searchPlaceholder": "Buscar reportes...",
+          "dateFilterType": "Tipo de Filtro de Fecha:",
+          "allProjects": "Todos los Proyectos",
+          "allStates": "Todos los Estados",
+          "allAssignees": "Todos los Asignados"
+        },
+        "preconfigured": {
+          "pqrByStatus": "PQRS por Estado",
+          "slaCompliance": "Cumplimiento SLA",
+          "burnDownChart": "Gráfico de Burndown"
+        },
+        "burndown": {
+          "real": "Real",
+          "ideal": "Ideal"
+        },
+        "pagination": {
+          "previous": "Anterior",
+          "page": "Página",
+          "next": "Siguiente"
+        }
+      },
+      "REPORTS": {
+        "QUERIES": {
+          "SLA_C": "SLA Cumplido",
+          "SLA": "SLA",
+          "SLASE": "SLA Sobre Ejecutado",
+          "SOMEBOME": "Cumplimiento"
+        }
+      },
+      "trash": {
+        "title": "Papelera",
+        "retentionPolicy": "Política de Retención: Los elementos se eliminan permanentemente después de 30 días",
+        "empty": "La papelera está vacía"
+      },
+      "Trash": {
+        "Tabs": {
+          "All": "Todo",
+          "Projects": "Proyectos",
+          "Tickets": "Tickets",
+          "Users": "Usuarios"
+        }
+      },
+      "TRASH": {
+        "HEADERS": {
+          "ITEM": "Elemento",
+          "TYPE": "Tipo",
+          "TRASHEDON": "Eliminado el",
+          "EXPIRESIN": "Expira en"
         }
       }
     }
@@ -138,7 +262,9 @@ const resources = {
           "attachments": "Attachments",
           "progress": "Progress",
           "audit": "Audit"
-        }
+        },
+        "checklistForState": "Checklist for State",
+        "attachEvidence": "Attach Evidence"
       },
       "enums": {
         "priority": {
@@ -148,7 +274,9 @@ const resources = {
         },
         "status": {
           "Lanzado / Cerrado": "Released / Closed",
-          "En Pruebas": "In Testing"
+          "En Pruebas": "In Testing",
+          "En Progreso": "In Progress",
+          "Backlog": "Backlog"
         },
         "area": {
           "Frontend": "Frontend"
@@ -164,12 +292,129 @@ const resources = {
           }
         },
         "cancel": "Cancel",
-        "confirm": "Confirm"
+        "confirm": "Confirm",
+        "saveChanges": "Save Changes",
+        "pqrForm": {
+          "dropzone": "Drag files here or click to select"
+        },
+        "apiKey": {
+          "title": "Configure API Key",
+          "description": "Enter your API key to enable advanced features",
+          "label": "API Key",
+          "placeholder": "sk-..."
+        }
       },
       "workflow": {
         "reason": {
           "label": "Justification",
           "placeholder": "Please provide a justification for this action..."
+        }
+      },
+      "unifiedPanel": {
+        "addCommentPlaceholder": "Add comment...",
+        "logProgressBtn": "Log Progress"
+      },
+      "checklist": {
+        "inprogress": {
+          "time": "Log time spent",
+          "log": "Update progress log",
+          "evidence": "Attach work evidence",
+          "commits": "Verify commits made",
+          "risks": "Identify risks and blockers"
+        }
+      },
+      "kanban": {
+        "title": "Kanban Board",
+        "compactView": "Compact View",
+        "daysAgo": "days ago"
+      },
+      "projects": {
+        "list": {
+          "title": "Projects List",
+          "newProject": "New Project"
+        }
+      },
+      "PROJECTS": {
+        "LIST": {
+          "HEADERS": {
+            "NAME": "Name",
+            "OWNER": "Owner",
+            "STATUS": "Status",
+            "PQRS": "PQRS",
+            "LASTACTIVITY": "Last Activity"
+          }
+        }
+      },
+      "teams": {
+        "title": "Team Management",
+        "newUser": "New User",
+        "statusActive": "Active",
+        "edit": "Edit"
+      },
+      "TEAMS": {
+        "HEADERS": {
+          "NAME": "Name",
+          "GLOBALROLE": "Global Role",
+          "STATUS": "Status",
+          "PROJECTS": "Projects"
+        }
+      },
+      "reports": {
+        "title": "Reports & Analytics",
+        "history": {
+          "viewHistory": "View History"
+        },
+        "manageSchedules": "Manage Schedules",
+        "newReport": "New Report",
+        "filters": {
+          "searchPlaceholder": "Search reports...",
+          "dateFilterType": "Date Filter Type:",
+          "allProjects": "All Projects",
+          "allStates": "All States",
+          "allAssignees": "All Assignees"
+        },
+        "preconfigured": {
+          "pqrByStatus": "PQRS by Status",
+          "slaCompliance": "SLA Compliance",
+          "burnDownChart": "Burndown Chart"
+        },
+        "burndown": {
+          "real": "Real",
+          "ideal": "Ideal"
+        },
+        "pagination": {
+          "previous": "Previous",
+          "page": "Page",
+          "next": "Next"
+        }
+      },
+      "REPORTS": {
+        "QUERIES": {
+          "SLA_C": "SLA Compliant",
+          "SLA": "SLA",
+          "SLASE": "SLA Over Executed",
+          "SOMEBOME": "Compliance"
+        }
+      },
+      "trash": {
+        "title": "Trash",
+        "retentionPolicy": "Retention Policy: Items are permanently deleted after 30 days",
+        "empty": "Trash is empty"
+      },
+      "Trash": {
+        "Tabs": {
+          "All": "All",
+          "Projects": "Projects",
+          "Tickets": "Tickets",
+          "Users": "Users"
+        }
+      },
+      "TRASH": {
+        "HEADERS": {
+          "ITEM": "Item",
+          "TYPE": "Type",
+          "TRASHEDON": "Trashed On",
+          "EXPIRESIN": "Expires In"
         }
       }
     }
@@ -223,7 +468,9 @@ const resources = {
           "attachments": "المرفقات",
           "progress": "التقدم",
           "audit": "المراجعة"
-        }
+        },
+        "checklistForState": "قائمة التحقق للحالة",
+        "attachEvidence": "إرفاق الأدلة"
       },
       "enums": {
         "priority": {
@@ -233,7 +480,9 @@ const resources = {
         },
         "status": {
           "Lanzado / Cerrado": "تم الإطلاق / مغلق",
-          "En Pruebas": "قيد الاختبار"
+          "En Pruebas": "قيد الاختبار",
+          "En Progreso": "قيد التنفيذ",
+          "Backlog": "قائمة الانتظار"
         },
         "area": {
           "Frontend": "الواجهة الأمامية"
@@ -249,12 +498,129 @@ const resources = {
           }
         },
         "cancel": "إلغاء",
-        "confirm": "تأكيد"
+        "confirm": "تأكيد",
+        "saveChanges": "حفظ التغييرات",
+        "pqrForm": {
+          "dropzone": "اسحب الملفات هنا أو انقر للاختيار"
+        },
+        "apiKey": {
+          "title": "تكوين مفتاح API",
+          "description": "أدخل مفتاح API لتمكين الميزات المتقدمة",
+          "label": "مفتاح API",
+          "placeholder": "sk-..."
+        }
       },
       "workflow": {
         "reason": {
           "label": "التبرير",
           "placeholder": "يرجى تقديم تبرير لهذا الإجراء..."
+        }
+      },
+      "unifiedPanel": {
+        "addCommentPlaceholder": "إضافة تعليق...",
+        "logProgressBtn": "تسجيل التقدم"
+      },
+      "checklist": {
+        "inprogress": {
+          "time": "تسجيل الوقت المستغرق",
+          "log": "تحديث سجل التقدم",
+          "evidence": "إرفاق دليل العمل",
+          "commits": "التحقق من الالتزامات المنجزة",
+          "risks": "تحديد المخاطر والعقبات"
+        }
+      },
+      "kanban": {
+        "title": "لوحة كانبان",
+        "compactView": "عرض مضغوط",
+        "daysAgo": "أيام مضت"
+      },
+      "projects": {
+        "list": {
+          "title": "قائمة المشاريع",
+          "newProject": "مشروع جديد"
+        }
+      },
+      "PROJECTS": {
+        "LIST": {
+          "HEADERS": {
+            "NAME": "الاسم",
+            "OWNER": "المالك",
+            "STATUS": "الحالة",
+            "PQRS": "PQRS",
+            "LASTACTIVITY": "آخر نشاط"
+          }
+        }
+      },
+      "teams": {
+        "title": "إدارة الفرق",
+        "newUser": "مستخدم جديد",
+        "statusActive": "نشط",
+        "edit": "تعديل"
+      },
+      "TEAMS": {
+        "HEADERS": {
+          "NAME": "الاسم",
+          "GLOBALROLE": "الدور العام",
+          "STATUS": "الحالة",
+          "PROJECTS": "المشاريع"
+        }
+      },
+      "reports": {
+        "title": "التقارير والتحليلات",
+        "history": {
+          "viewHistory": "عرض السجل"
+        },
+        "manageSchedules": "إدارة الجداول الزمنية",
+        "newReport": "تقرير جديد",
+        "filters": {
+          "searchPlaceholder": "البحث في التقارير...",
+          "dateFilterType": "نوع فلتر التاريخ:",
+          "allProjects": "جميع المشاريع",
+          "allStates": "جميع الحالات",
+          "allAssignees": "جميع المكلفين"
+        },
+        "preconfigured": {
+          "pqrByStatus": "PQRS حسب الحالة",
+          "slaCompliance": "الامتثال لـ SLA",
+          "burnDownChart": "مخطط Burndown"
+        },
+        "burndown": {
+          "real": "فعلي",
+          "ideal": "مثالي"
+        },
+        "pagination": {
+          "previous": "السابق",
+          "page": "الصفحة",
+          "next": "التالي"
+        }
+      },
+      "REPORTS": {
+        "QUERIES": {
+          "SLA_C": "متوافق مع SLA",
+          "SLA": "SLA",
+          "SLASE": "SLA مفرط التنفيذ",
+          "SOMEBOME": "الامتثال"
+        }
+      },
+      "trash": {
+        "title": "سلة المهملات",
+        "retentionPolicy": "سياسة الاحتفاظ: يتم حذف العناصر نهائياً بعد 30 يوماً",
+        "empty": "سلة المهملات فارغة"
+      },
+      "Trash": {
+        "Tabs": {
+          "All": "الكل",
+          "Projects": "المشاريع",
+          "Tickets": "التذاكر",
+          "Users": "المستخدمين"
+        }
+      },
+      "TRASH": {
+        "HEADERS": {
+          "ITEM": "العنصر",
+          "TYPE": "النوع",
+          "TRASHEDON": "تم الحذف في",
+          "EXPIRESIN": "ينتهي في"
         }
       }
     }
