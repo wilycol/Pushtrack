@@ -178,6 +178,13 @@ const resources = {
           "placeholder": "Por favor, proporciona una justificación para esta acción..."
         }
       },
+      "notifications": {
+        "title": "Notificaciones",
+        "ticketMovedText": "La tarea ha sido movida",
+        "noNotifications": "No hay notificaciones",
+        "markAllRead": "Marcar todas como leídas",
+        "clearAll": "Limpiar todas"
+      },
       "unifiedPanel": {
         "addCommentPlaceholder": "Agregar comentario...",
         "logProgressBtn": "Registrar Progreso",
@@ -493,6 +500,13 @@ const resources = {
           "placeholder": "Please provide a justification for this action..."
         }
       },
+      "notifications": {
+        "title": "Notifications",
+        "ticketMovedText": "The task has been moved",
+        "noNotifications": "No notifications",
+        "markAllRead": "Mark all as read",
+        "clearAll": "Clear all"
+      },
       "unifiedPanel": {
         "addCommentPlaceholder": "Add comment...",
         "logProgressBtn": "Log Progress",
@@ -804,6 +818,13 @@ const resources = {
           "label": "التبرير",
           "placeholder": "يرجى تقديم تبرير لهذا الإجراء..."
         }
+      },
+      "notifications": {
+        "title": "الإشعارات",
+        "ticketMovedText": "تم نقل المهمة",
+        "noNotifications": "لا توجد إشعارات",
+        "markAllRead": "تحديد الكل كمقروء",
+        "clearAll": "مسح الكل"
       },
       "unifiedPanel": {
         "addCommentPlaceholder": "إضافة تعليق...",
