@@ -92,6 +92,12 @@ const resources = {
         },
         "projectStatus": {
           "Active": "Activo"
+        },
+        "tipo": {
+          "Queja": "Queja"
+        },
+        "canal": {
+          "App": "App"
         }
       },
       "taskTypes": {
@@ -108,7 +114,20 @@ const resources = {
         "saveChanges": "Guardar Cambios",
         "pqrForm": {
           "dropzone": "Arrastra archivos aquí o haz clic para seleccionar",
-          "dropzoneHint": "Archivos soportados: PDF, DOC, DOCX, JPG, PNG"
+          "dropzoneHint": "Archivos soportados: PDF, DOC, DOCX, JPG, PNG",
+          "editTitle": "Editar PQR",
+          "title": "Título",
+          "project": "Proyecto",
+          "assignee": "Responsable",
+          "reporter": "Informador",
+          "po_cto": "PO/CTO",
+          "collaborators": "Colaboradores",
+          "status": "Estado",
+          "priority": "Prioridad",
+          "taskType": "Tipo de Tarea",
+          "type": "Tipo",
+          "channel": "Canal",
+          "sla": "SLA"
         },
         "apiKey": {
           "title": "Configurar Clave API",
@@ -356,7 +375,20 @@ const resources = {
         "saveChanges": "Save Changes",
         "pqrForm": {
           "dropzone": "Drag files here or click to select",
-          "dropzoneHint": "Supported files: PDF, DOC, DOCX, JPG, PNG"
+          "dropzoneHint": "Supported files: PDF, DOC, DOCX, JPG, PNG",
+          "editTitle": "Edit PQR",
+          "title": "Title",
+          "project": "Project",
+          "assignee": "Assignee",
+          "reporter": "Reporter",
+          "po_cto": "PO/CTO",
+          "collaborators": "Collaborators",
+          "status": "Status",
+          "priority": "Priority",
+          "taskType": "Task Type",
+          "type": "Type",
+          "channel": "Channel",
+          "sla": "SLA"
         },
         "apiKey": {
           "title": "Configure API Key",
@@ -601,7 +633,20 @@ const resources = {
         "saveChanges": "حفظ التغييرات",
         "pqrForm": {
           "dropzone": "اسحب الملفات هنا أو انقر للاختيار",
-          "dropzoneHint": "الملفات المدعومة: PDF, DOC, DOCX, JPG, PNG"
+          "dropzoneHint": "الملفات المدعومة: PDF, DOC, DOCX, JPG, PNG",
+          "editTitle": "تعديل PQR",
+          "title": "العنوان",
+          "project": "المشروع",
+          "assignee": "المسؤول",
+          "reporter": "المبلغ",
+          "po_cto": "PO/CTO",
+          "collaborators": "المتعاونون",
+          "status": "الحالة",
+          "priority": "الأولوية",
+          "taskType": "نوع المهمة",
+          "type": "النوع",
+          "channel": "القناة",
+          "sla": "SLA"
         },
         "apiKey": {
           "title": "تكوين مفتاح API",
