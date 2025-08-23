@@ -322,7 +322,9 @@ const resources = {
           "SLA_C": "SLA Cumplido",
           "SLA": "SLA",
           "SLASE": "SLA Sobre Ejecutado",
-          "SOMEBOME": "Cumplimiento"
+          "SOMEBOME": "Cumplimiento",
+          "SLA_CREPORTS": "SLA Cumplido",
+          "SOME ROMEF": "Cumplimiento"
         }
       },
       "trash": {
@@ -649,7 +651,9 @@ const resources = {
             "SLA_C": "SLA Compliant",
             "SLA": "SLA",
             "SLASE": "SLA Over Executed",
-            "SOMEBOME": "Compliance"
+            "SOMEBOME": "Compliance",
+            "SLA_CREPORTS": "SLA Compliant",
+            "SOME ROMEF": "Compliance"
           }
         },
         "trash": {
@@ -973,7 +977,9 @@ const resources = {
               "SLA_C": "متوافق مع SLA",
               "SLA": "SLA",
               "SLASE": "SLA مفرط التنفيذ",
-              "SOMEBOME": "الامتثال"
+              "SOMEBOME": "الامتثال",
+              "SLA_CREPORTS": "متوافق مع SLA",
+              "SOME ROMEF": "الامتثال"
             }
           },
           "trash": {
