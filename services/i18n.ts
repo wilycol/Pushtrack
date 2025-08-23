@@ -71,6 +71,21 @@ const resources = {
       },
       "taskTypes": {
         "Bug": "Bug"
+      },
+      "modals": {
+        "modal": {
+          "override": {
+            "title": "Confirmar Acción"
+          }
+        },
+        "cancel": "Cancelar",
+        "confirm": "Confirmar"
+      },
+      "workflow": {
+        "reason": {
+          "label": "Justificación",
+          "placeholder": "Por favor, proporciona una justificación para esta acción..."
+        }
       }
     }
   },
@@ -141,6 +156,21 @@ const resources = {
       },
       "taskTypes": {
         "Bug": "Bug"
+      },
+      "modals": {
+        "modal": {
+          "override": {
+            "title": "Confirm Action"
+          }
+        },
+        "cancel": "Cancel",
+        "confirm": "Confirm"
+      },
+      "workflow": {
+        "reason": {
+          "label": "Justification",
+          "placeholder": "Please provide a justification for this action..."
+        }
       }
     }
   },
@@ -211,6 +241,21 @@ const resources = {
       },
       "taskTypes": {
         "Bug": "خطأ"
+      },
+      "modals": {
+        "modal": {
+          "override": {
+            "title": "تأكيد الإجراء"
+          }
+        },
+        "cancel": "إلغاء",
+        "confirm": "تأكيد"
+      },
+      "workflow": {
+        "reason": {
+          "label": "التبرير",
+          "placeholder": "يرجى تقديم تبرير لهذا الإجراء..."
+        }
       }
     }
   }
