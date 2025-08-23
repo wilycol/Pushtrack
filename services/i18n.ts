@@ -88,7 +88,12 @@ const resources = {
           "Esperando Cliente": "Esperando Cliente"
         },
         "area": {
-          "Frontend": "Frontend"
+          "Backend": "Backend",
+          "Frontend": "Frontend",
+          "Solidity": "Solidity",
+          "QA": "QA",
+          "Diseño": "Diseño",
+          "General": "General"
         },
         "projectStatus": {
           "Active": "Activo"
@@ -399,7 +404,12 @@ const resources = {
           "Esperando Cliente": "Waiting for Client"
         },
         "area": {
-          "Frontend": "Frontend"
+          "Backend": "Backend",
+          "Frontend": "Frontend",
+          "Solidity": "Solidity",
+          "QA": "QA",
+          "Diseño": "Design",
+          "General": "General"
         },
         "projectStatus": {
           "Active": "Active"
@@ -496,6 +506,30 @@ const resources = {
         "list": {
           "title": "Projects List",
           "newProject": "New Project"
+        },
+        "detail": {
+          "back": "Back",
+          "edit": "Edit",
+          "kpis": {
+            "total": "Total",
+            "open": "Open",
+            "closed": "Closed",
+            "overdue": "Overdue",
+            "na": "N/A"
+          },
+          "tabs": {
+            "team": "Team",
+            "tasks": "Tasks",
+            "config": "Configuration"
+          },
+          "config": {
+            "owner": "Owner",
+            "startDate": "Start Date",
+            "description": "Description",
+            "defaultSLA": "Default SLA",
+            "endDate": "End Date",
+            "notSet": "Not Set"
+          }
         }
       },
       "PROJECTS": {
@@ -674,7 +708,12 @@ const resources = {
           "Esperando Cliente": "بانتظار العميل"
         },
         "area": {
-          "Frontend": "الواجهة الأمامية"
+          "Backend": "الخلفية",
+          "Frontend": "الواجهة الأمامية",
+          "Solidity": "سوليديتي",
+          "QA": "ضمان الجودة",
+          "Diseño": "التصميم",
+          "General": "عام"
         }
       },
       "taskTypes": {
@@ -768,6 +807,30 @@ const resources = {
         "list": {
           "title": "قائمة المشاريع",
           "newProject": "مشروع جديد"
+        },
+        "detail": {
+          "back": "رجوع",
+          "edit": "تعديل",
+          "kpis": {
+            "total": "المجموع",
+            "open": "مفتوح",
+            "closed": "مغلق",
+            "overdue": "متأخر",
+            "na": "غير متاح"
+          },
+          "tabs": {
+            "team": "الفريق",
+            "tasks": "المهام",
+            "config": "الإعدادات"
+          },
+          "config": {
+            "owner": "المالك",
+            "startDate": "تاريخ البدء",
+            "description": "الوصف",
+            "defaultSLA": "SLA الافتراضي",
+            "endDate": "تاريخ الانتهاء",
+            "notSet": "غير محدد"
+          }
         }
       },
       "PROJECTS": {
