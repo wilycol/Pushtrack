@@ -47,7 +47,18 @@ const resources = {
           "area": "Área/Depto",
           "createdDate": "F. Creación",
           "lastUpdate": "Últ. Actualización",
-          "timeRemaining": "Tiempo Restante"
+          "timeRemaining": "Tiempo Restante",
+          "whatsappMenu": {
+            "send": "Enviar",
+            "sendl": "Enviar Link",
+            "copy": "Copiar",
+            "genel": "General",
+            "sendWhatsApp": "Enviar WhatsApp",
+            "sendEmail": "Enviar Email",
+            "generateImage": "Generar Imagen",
+            "clipboardSuccess": "Copiado al portapapeles",
+            "shareError": "Error al compartir"
+          }
         },
         "histories": {
           "attachments": "Adjuntos",
@@ -284,7 +295,18 @@ const resources = {
           "area": "Area/Dept",
           "createdDate": "Created Date",
           "lastUpdate": "Last Update",
-          "timeRemaining": "Time Remaining"
+          "timeRemaining": "Time Remaining",
+          "whatsappMenu": {
+            "send": "Send",
+            "sendl": "Send Link",
+            "copy": "Copy",
+            "genel": "General",
+            "sendWhatsApp": "Send WhatsApp",
+            "sendEmail": "Send Email",
+            "generateImage": "Generate Image",
+            "clipboardSuccess": "Copied to clipboard",
+            "shareError": "Share error"
+          }
         },
         "histories": {
           "attachments": "Attachments",
@@ -315,6 +337,9 @@ const resources = {
         },
         "area": {
           "Frontend": "Frontend"
+        },
+        "projectStatus": {
+          "Active": "Active"
         }
       },
       "taskTypes": {
@@ -518,7 +543,18 @@ const resources = {
           "area": "المنطقة/القسم",
           "createdDate": "تاريخ الإنشاء",
           "lastUpdate": "آخر تحديث",
-          "timeRemaining": "الوقت المتبقي"
+          "timeRemaining": "الوقت المتبقي",
+          "whatsappMenu": {
+            "send": "إرسال",
+            "sendl": "إرسال الرابط",
+            "copy": "نسخ",
+            "genel": "عام",
+            "sendWhatsApp": "إرسال واتساب",
+            "sendEmail": "إرسال البريد الإلكتروني",
+            "generateImage": "إنشاء صورة",
+            "clipboardSuccess": "تم النسخ إلى الحافظة",
+            "shareError": "خطأ في المشاركة"
+          }
         },
         "histories": {
           "attachments": "المرفقات",
