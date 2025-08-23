@@ -74,9 +74,9 @@ const resources = {
       },
       "enums": {
         "priority": {
-          "Baja": "Baja",
+          "Alta": "Alta",
           "Media": "Media",
-          "Alta": "Alta"
+          "Baja": "Baja"
         },
         "status": {
           "Lanzado / Cerrado": "Lanzado / Cerrado",
@@ -94,10 +94,16 @@ const resources = {
           "Active": "Activo"
         },
         "tipo": {
-          "Queja": "Queja"
+          "Petición": "Petición",
+          "Queja": "Queja",
+          "Reclamo": "Reclamo",
+          "Sugerencia": "Sugerencia"
         },
         "canal": {
-          "App": "App"
+          "Email": "Email",
+          "WhatsApp": "WhatsApp",
+          "App": "App",
+          "Otro": "Otro"
         }
       },
       "taskTypes": {
@@ -375,9 +381,9 @@ const resources = {
       },
       "enums": {
         "priority": {
-          "Baja": "Low",
-          "Media": "Medium",
-          "Alta": "High"
+          "Alta": "Alta",
+          "Media": "Media",
+          "Baja": "Baja"
         },
         "status": {
           "Lanzado / Cerrado": "Released / Closed",
@@ -646,9 +652,9 @@ const resources = {
       },
       "enums": {
         "priority": {
-          "Baja": "منخفضة",
+          "Alta": "عالية",
           "Media": "متوسطة",
-          "Alta": "عالية"
+          "Baja": "منخفضة"
         },
         "status": {
           "Lanzado / Cerrado": "تم الإطلاق / مغلق",
