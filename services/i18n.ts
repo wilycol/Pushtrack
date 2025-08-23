@@ -134,6 +134,16 @@ const resources = {
           "description": "Ingresa tu clave API para habilitar las funciones avanzadas",
           "label": "Clave API",
           "placeholder": "sk-..."
+        },
+        "userForm": {
+          "editTitle": "Editar Usuario",
+          "fullName": "Nombre Completo",
+          "email": "Correo Electrónico",
+          "whatsapp": "WhatsApp",
+          "position": "Cargo",
+          "globalRole": "Rol Global",
+          "activeUser": "Usuario Activo",
+          "assignProjects": "Asignar Proyectos"
         }
       },
       "workflow": {
@@ -177,6 +187,30 @@ const resources = {
         "list": {
           "title": "Lista de Proyectos",
           "newProject": "Nuevo Proyecto"
+        },
+        "detail": {
+          "back": "Volver",
+          "edit": "Editar",
+          "kpis": {
+            "total": "Total",
+            "open": "Abiertos",
+            "closed": "Cerrados",
+            "overdue": "Vencidos",
+            "na": "N/A"
+          },
+          "tabs": {
+            "team": "Equipo",
+            "tasks": "Tareas",
+            "config": "Configuración"
+          },
+          "config": {
+            "owner": "Propietario",
+            "startDate": "Fecha de Inicio",
+            "description": "Descripción",
+            "defaultSLA": "SLA por Defecto",
+            "endDate": "Fecha de Fin",
+            "notSet": "No Establecido"
+          }
         }
       },
       "PROJECTS": {
@@ -395,6 +429,16 @@ const resources = {
           "description": "Enter your API key to enable advanced features",
           "label": "API Key",
           "placeholder": "sk-..."
+        },
+        "userForm": {
+          "editTitle": "Edit User",
+          "fullName": "Full Name",
+          "email": "Email",
+          "whatsapp": "WhatsApp",
+          "position": "Position",
+          "globalRole": "Global Role",
+          "activeUser": "Active User",
+          "assignProjects": "Assign Projects"
         }
       },
       "workflow": {
@@ -653,6 +697,16 @@ const resources = {
           "description": "أدخل مفتاح API لتمكين الميزات المتقدمة",
           "label": "مفتاح API",
           "placeholder": "sk-..."
+        },
+        "userForm": {
+          "editTitle": "تعديل المستخدم",
+          "fullName": "الاسم الكامل",
+          "email": "البريد الإلكتروني",
+          "whatsapp": "واتساب",
+          "position": "المنصب",
+          "globalRole": "الدور العام",
+          "activeUser": "المستخدم النشط",
+          "assignProjects": "تعيين المشاريع"
         }
       },
       "workflow": {
