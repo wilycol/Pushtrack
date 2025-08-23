@@ -75,7 +75,8 @@ const resources = {
         "comments": "Comentarios",
         "noComments": "No hay comentarios aún",
         "addCommentPlaceholder": "Escribe un comentario...",
-        "yc": "YC"
+        "yc": "YC",
+        "you": "Tú"
       },
       "enums": {
         "priority": {
@@ -413,7 +414,8 @@ const resources = {
           "comments": "Comments",
           "noComments": "No comments yet",
           "addCommentPlaceholder": "Write a comment...",
-          "yc": "YC"
+          "yc": "YC",
+          "you": "You"
         },
         "enums": {
           "priority": {
@@ -739,7 +741,8 @@ const resources = {
             "comments": "التعليقات",
             "noComments": "لا توجد تعليقات بعد",
             "addCommentPlaceholder": "اكتب تعليقاً...",
-            "yc": "YC"
+            "yc": "YC",
+            "you": "أنت"
           },
           "enums": {
             "priority": {
