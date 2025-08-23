@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Usuario - Pushtrack</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #e2e8f0;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            min-height: 100vh;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: rgba(30, 41, 59, 0.8);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+        .header h1 { font-size: 2.5rem; color: #60a5fa; margin-bottom: 1rem; }
+        .header p { font-size: 1.1rem; color: #94a3b8; }
+        .nav-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .nav-tab {
+            padding: 0.75rem 1.5rem;
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid #334155;
+            border-radius: 8px;
+            color: #94a3b8;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .nav-tab:hover, .nav-tab.active {
+            background: #3b82f6;
+            color: white;
+            border-color: #3b82f6;
+        }
+        .content-section { display: none; }
+        .content-section.active { display: block; }
+        .section {
+            background: rgba(30, 41, 59, 0.8);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid #334155;
+        }
+        .section h2 { color: #60a5fa; font-size: 1.8rem; margin-bottom: 1rem; }
+        .section h3 { color: #f1f5f9; font-size: 1.3rem; margin: 1.5rem 0 1rem 0; }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .feature-card {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid #475569;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+        .feature-card h4 { color: #60a5fa; margin-bottom: 0.5rem; }
+        .step-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        .step-list li {
+            counter-increment: step-counter;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: rgba(15, 23, 42, 0.4);
+            border-radius: 8px;
+            border-left: 4px solid #3b82f6;
+            position: relative;
+        }
+        .step-list li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: -12px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #3b82f6;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .tip-box {
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid #22c55e;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        .close-btn {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            background: #ef4444;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <button class="close-btn" onclick="closeGuide()">×</button>
+    
+    <div class="container">
+        <div class="header">
+            <h1>📚 Guía de Usuario Pushtrack</h1>
+            <p>Tu compañero completo para gestionar tareas, proyectos y equipos</p>
+        </div>
+
+        <div class="nav-tabs">
+            <button class="nav-tab active" onclick="showSection('overview')">🏠 Visión General</button>
+            <button class="nav-tab" onclick="showSection('tasks')">📋 Gestión de Tareas</button>
+            <button class="nav-tab" onclick="showSection('kanban')">📊 Vista Kanban</button>
+            <button class="nav-tab" onclick="showSection('projects')">📁 Proyectos</button>
+            <button class="nav-tab" onclick="showSection('teams')">👥 Equipos</button>
+            <button class="nav-tab" onclick="showSection('reports')">📈 Reportes</button>
+            <button class="nav-tab" onclick="showSection('workflow')">🔄 Flujo de Trabajo</button>
+            <button class="nav-tab" onclick="showSection('tips')">💡 Consejos</button>
+        </div>
+
+        <!-- Visión General -->
+        <div id="overview" class="content-section active">
+            <div class="section">
+                <h2>🏠 Bienvenido a Pushtrack</h2>
+                <p>Pushtrack es una plataforma integral de gestión de tareas y proyectos diseñada para equipos que necesitan organizar, rastrear y optimizar su flujo de trabajo.</p>
+                
+                <h3>¿Qué puedes hacer con Pushtrack?</h3>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>📋 Gestión de Tareas</h4>
+                        <p>Crear, asignar y rastrear tareas con diferentes tipos, prioridades y estados</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>📊 Vista Kanban</h4>
+                        <p>Visualizar el progreso de tareas en un tablero interactivo con drag & drop</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>📁 Organización por Proyectos</h4>
+                        <p>Agrupar tareas en proyectos para mejor organización y seguimiento</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>👥 Gestión de Equipos</h4>
+                        <p>Administrar usuarios, roles y permisos para colaboración efectiva</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>📈 Reportes y Analytics</h4>
+                        <p>Generar reportes detallados para análisis de productividad</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🤖 IA Integrada</h4>
+                        <p>Usar inteligencia artificial para análisis y generación de contenido</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🎯 Tipos de Tareas</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>🐛 Bug</h4>
+                        <p>Problemas técnicos detectados que requieren solución inmediata</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>✨ Mejora</h4>
+                        <p>Solicitudes de nuevas funcionalidades o mejoras al sistema</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>📝 PQR</h4>
+                        <p>Peticiones, Quejas, Reclamos y Sugerencias de clientes</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🔧 ODT</h4>
+                        <p>Órdenes de Trabajo internas asignadas por líderes</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>⚠️ Alerta</h4>
+                        <p>Notificaciones automáticas del sistema (vencimientos, etc.)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gestión de Tareas -->
+        <div id="tasks" class="content-section">
+            <div class="section">
+                <h2>📋 Gestión de Tareas</h2>
+                <p>La gestión de tareas es el corazón de Pushtrack. Aquí aprenderás cómo crear, editar y gestionar tareas de manera eficiente.</p>
+
+                <h3>Crear una Nueva Tarea</h3>
+                <ol class="step-list">
+                    <li>Navega a la sección "Tareas" en el menú principal</li>
+                    <li>Haz clic en el botón "Nueva Tarea" (botón morado)</li>
+                    <li>Completa los campos obligatorios: Título, Proyecto, Responsable, Descripción</li>
+                    <li>Configura opciones adicionales: Prioridad, Tipo, SLA, Adjuntos</li>
+                    <li>Haz clic en "Guardar Tarea"</li>
+                </ol>
+
+                <div class="tip-box">
+                    <h4>💡 Consejo</h4>
+                    <p>Usa descripciones detalladas y adjunta capturas de pantalla cuando sea posible. Esto ayudará al responsable a entender mejor el contexto.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Filtrar y Buscar Tareas</h3>
+                <p>Utiliza los filtros en la parte superior para encontrar tareas específicas:</p>
+                <ul>
+                    <li><strong>Buscar:</strong> Por ID, título o contenido</li>
+                    <li><strong>Proyecto:</strong> Filtrar por proyecto específico</li>
+                    <li><strong>Estado:</strong> Ver tareas por estado actual</li>
+                    <li><strong>Prioridad:</strong> Filtrar por nivel de urgencia</li>
+                    <li><strong>Tipo:</strong> Mostrar solo ciertos tipos de tareas</li>
+                    <li><strong>Críticos:</strong> Ver tareas con SLA vencido</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Vista Kanban -->
+        <div id="kanban" class="content-section">
+            <div class="section">
+                <h2>📊 Vista Kanban</h2>
+                <p>La vista Kanban te permite visualizar el progreso de todas las tareas en un tablero interactivo.</p>
+
+                <h3>Estados del Flujo</h3>
+                <p>El tablero Kanban está organizado en columnas que representan los diferentes estados:</p>
+                <ul>
+                    <li><strong>📝 Backlog:</strong> Tareas pendientes de revisión</li>
+                    <li><strong>📋 Por Hacer:</strong> Tareas aprobadas y listas</li>
+                    <li><strong>⚡ En Progreso:</strong> Tareas en desarrollo</li>
+                    <li><strong>👀 En Revisión:</strong> Pendientes de validación</li>
+                    <li><strong>🧪 En Pruebas:</strong> En proceso de testing</li>
+                    <li><strong>⏳ Esperando Cliente:</strong> Pendientes de feedback</li>
+                    <li><strong>✅ Lanzado/Cerrado:</strong> Tareas completadas</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Drag & Drop</h3>
+                <ol class="step-list">
+                    <li>Haz clic y mantén presionada una tarjeta de tarea</li>
+                    <li>Arrastra la tarjeta a la columna del estado deseado</li>
+                    <li>Suelta la tarjeta en la nueva posición</li>
+                    <li>Si es necesario, completa el checklist o proporciona justificación</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Proyectos -->
+        <div id="projects" class="content-section">
+            <div class="section">
+                <h2>📁 Gestión de Proyectos</h2>
+                <p>Los proyectos te permiten organizar tareas relacionadas y gestionar equipos de manera eficiente.</p>
+
+                <h3>Crear un Nuevo Proyecto</h3>
+                <ol class="step-list">
+                    <li>Navega a la sección "Proyectos"</li>
+                    <li>Haz clic en "Nuevo Proyecto"</li>
+                    <li>Completa la información: Nombre, Owner, Descripción, Fechas, SLA</li>
+                    <li>Haz clic en "Crear Proyecto"</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Equipos -->
+        <div id="teams" class="content-section">
+            <div class="section">
+                <h2>👥 Gestión de Equipos</h2>
+                <p>Administra usuarios, roles y permisos para optimizar la colaboración en tu equipo.</p>
+
+                <h3>Roles del Sistema</h3>
+                <ul>
+                    <li><strong>Administrador:</strong> Acceso completo al sistema</li>
+                    <li><strong>Líder:</strong> Gestión de proyectos y tareas</li>
+                    <li><strong>Colaborador:</strong> Gestión de tareas asignadas</li>
+                    <li><strong>Cliente:</strong> Ver tareas relacionadas</li>
+                    <li><strong>Visualizador:</strong> Solo lectura</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Reportes -->
+        <div id="reports" class="content-section">
+            <div class="section">
+                <h2>📈 Reportes y Analytics</h2>
+                <p>Genera reportes detallados para analizar la productividad y el rendimiento de tu equipo.</p>
+
+                <h3>Reportes Disponibles</h3>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>📊 Tareas por Estado</h4>
+                        <p>Distribución de tareas en cada estado del flujo</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>⏰ Cumplimiento de SLA</h4>
+                        <p>Análisis de tiempos de entrega</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>👥 Carga por Responsable</h4>
+                        <p>Distribución de trabajo en el equipo</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>📈 Productividad Diaria</h4>
+                        <p>Tareas completadas por día</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flujo de Trabajo -->
+        <div id="workflow" class="content-section">
+            <div class="section">
+                <h2>🔄 Flujo de Trabajo</h2>
+                <p>Entiende cómo fluyen las tareas a través de los diferentes estados y qué se requiere en cada paso.</p>
+
+                <h3>Reglas de Transición</h3>
+                <ul>
+                    <li><strong>Avance Secuencial:</strong> Las tareas deben avanzar un estado a la vez</li>
+                    <li><strong>Checklist Obligatorio:</strong> Debe completarse antes de avanzar</li>
+                    <li><strong>Justificación:</strong> Requerida para retrocesos o saltos</li>
+                    <li><strong>Permisos:</strong> Solo ciertos roles pueden realizar ciertas acciones</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Consejos -->
+        <div id="tips" class="content-section">
+            <div class="section">
+                <h2>💡 Consejos y Mejores Prácticas</h2>
+                <p>Maximiza tu productividad con estos consejos probados.</p>
+
+                <h3>Organización Efectiva</h3>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>📝 Títulos Descriptivos</h4>
+                        <p>Usa títulos claros que describan exactamente qué se necesita hacer</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🏷️ Etiquetas Consistentes</h4>
+                        <p>Establece convenciones para prioridades y tipos</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>📅 SLAs Realistas</h4>
+                        <p>Define tiempos límite alcanzables y medibles</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>👥 Asignaciones Claras</h4>
+                        <p>Asegúrate de que cada tarea tenga un responsable definido</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+
+            const tabs = document.querySelectorAll('.nav-tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+
+        function closeGuide() {
+            if (window.parent && window.parent !== window) {
+                window.parent.postMessage({ type: 'closeGuide' }, '*');
+            } else {
+                window.close();
+            }
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeGuide();
+        });
+    </script>
+</body>
+</html>
