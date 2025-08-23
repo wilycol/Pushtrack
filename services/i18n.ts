@@ -91,7 +91,8 @@ const resources = {
           "Backlog": "Backlog",
           "En Revisión": "En Revisión",
           "Por Hacer": "Por Hacer",
-          "Esperando Cliente": "Esperando Cliente"
+          "Esperando Cliente": "Esperando Cliente",
+          "No Aplica": "No Aplica"
         },
         "area": {
           "Backend": "Backend",
@@ -137,6 +138,7 @@ const resources = {
           "dropzone": "Arrastra archivos aquí o haz clic para seleccionar",
           "dropzoneHint": "Archivos soportados: PDF, DOC, DOCX, JPG, PNG",
           "editTitle": "Editar PQR",
+          "newTitle": "Nueva PQR",
           "title": "Título",
           "project": "Proyecto",
           "assignee": "Responsable",
@@ -148,7 +150,9 @@ const resources = {
           "taskType": "Tipo de Tarea",
           "type": "Tipo",
           "channel": "Canal",
-          "sla": "SLA"
+          "sla": "SLA",
+          "dueDate": "Fecha de Vencimiento",
+          "saveTask": "Guardar Tarea"
         },
         "apiKey": {
           "title": "Configurar Clave API",
@@ -430,7 +434,8 @@ const resources = {
             "Backlog": "Backlog",
             "En Revisión": "In Review",
             "Por Hacer": "To Do",
-            "Esperando Cliente": "Waiting for Client"
+            "Esperando Cliente": "Waiting for Client",
+            "No Aplica": "No Applies"
           },
           "area": {
             "Backend": "Backend",
@@ -464,6 +469,7 @@ const resources = {
             "dropzone": "Drag files here or click to select",
             "dropzoneHint": "Supported files: PDF, DOC, DOCX, JPG, PNG",
             "editTitle": "Edit PQR",
+            "newTitle": "New PQR",
             "title": "Title",
             "project": "Project",
             "assignee": "Assignee",
@@ -475,7 +481,9 @@ const resources = {
             "taskType": "Task Type",
             "type": "Type",
             "channel": "Channel",
-            "sla": "SLA"
+            "sla": "SLA",
+            "dueDate": "Due Date",
+            "saveTask": "Save Task"
           },
           "apiKey": {
             "title": "Configure API Key",
@@ -757,7 +765,8 @@ const resources = {
               "Backlog": "قائمة الانتظار",
               "En Revisión": "قيد المراجعة",
               "Por Hacer": "للقيام به",
-              "Esperando Cliente": "بانتظار العميل"
+              "Esperando Cliente": "بانتظار العميل",
+              "No Aplica": "لا ينطبق"
             },
             "area": {
               "Backend": "الخلفية",
@@ -788,6 +797,7 @@ const resources = {
               "dropzone": "اسحب الملفات هنا أو انقر للاختيار",
               "dropzoneHint": "الملفات المدعومة: PDF, DOC, DOCX, JPG, PNG",
               "editTitle": "تعديل PQR",
+              "newTitle": "PQR جديد",
               "title": "العنوان",
               "project": "المشروع",
               "assignee": "المسؤول",
@@ -799,7 +809,9 @@ const resources = {
               "taskType": "نوع المهمة",
               "type": "النوع",
               "channel": "القناة",
-              "sla": "SLA"
+              "sla": "SLA",
+              "dueDate": "تاريخ الاستحقاق",
+              "saveTask": "حفظ المهمة"
             },
             "apiKey": {
               "title": "تكوين مفتاح API",
