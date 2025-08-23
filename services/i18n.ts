@@ -341,22 +341,6 @@ const resources = {
           "TRASHEDON": "Eliminado el",
           "EXPIRESIN": "Expira en"
         }
-      },
-      "Trash": {
-        "Tabs": {
-          "All": "Todo",
-          "Projects": "Proyectos",
-          "Tickets": "Tickets",
-          "Users": "Usuarios"
-        }
-      },
-      "TRASH": {
-        "HEADERS": {
-          "ITEM": "Elemento",
-          "TYPE": "Tipo",
-          "TRASHEDON": "Eliminado el",
-          "EXPIRESIN": "Expira en"
-        }
       }
     },
     en: {
@@ -678,22 +662,6 @@ const resources = {
             "Tickets": "Tickets",
             "Users": "Users"
           },
-          "HEADERS": {
-            "ITEM": "Item",
-            "TYPE": "Type",
-            "TRASHEDON": "Trashed On",
-            "EXPIRESIN": "Expires In"
-          }
-        },
-        "Trash": {
-          "Tabs": {
-            "All": "All",
-            "Projects": "Projects",
-            "Tickets": "Tickets",
-            "Users": "Users"
-          }
-        },
-        "TRASH": {
           "HEADERS": {
             "ITEM": "Item",
             "TYPE": "Type",
