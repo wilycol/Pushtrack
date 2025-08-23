@@ -159,6 +159,17 @@ const resources = {
           "globalRole": "Rol Global",
           "activeUser": "Usuario Activo",
           "assignProjects": "Asignar Proyectos"
+        },
+        "projectForm": {
+          "editTitle": "Editar Proyecto",
+          "name": "Nombre del Proyecto",
+          "description": "Descripción",
+          "startDate": "Fecha de Inicio",
+          "endDate": "Fecha de Fin",
+          "defaultSLA": "SLA por Defecto",
+          "status": "Estado",
+          "owner": "Propietario",
+          "reminderFrequencyHours": "Frecuencia de Recordatorio (horas)"
         }
       },
       "workflow": {
@@ -463,6 +474,17 @@ const resources = {
           "globalRole": "Global Role",
           "activeUser": "Active User",
           "assignProjects": "Assign Projects"
+        },
+        "projectForm": {
+          "editTitle": "Edit Project",
+          "name": "Project Name",
+          "description": "Description",
+          "startDate": "Start Date",
+          "endDate": "End Date",
+          "defaultSLA": "Default SLA",
+          "status": "Status",
+          "owner": "Owner",
+          "reminderFrequencyHours": "Reminder Frequency (hours)"
         }
       },
       "workflow": {
@@ -764,6 +786,17 @@ const resources = {
           "globalRole": "الدور العام",
           "activeUser": "المستخدم النشط",
           "assignProjects": "تعيين المشاريع"
+        },
+        "projectForm": {
+          "editTitle": "تعديل المشروع",
+          "name": "اسم المشروع",
+          "description": "الوصف",
+          "startDate": "تاريخ البدء",
+          "endDate": "تاريخ الانتهاء",
+          "defaultSLA": "SLA الافتراضي",
+          "status": "الحالة",
+          "owner": "المالك",
+          "reminderFrequencyHours": "تكرار التذكير (ساعات)"
         }
       },
       "workflow": {
