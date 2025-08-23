@@ -107,7 +107,11 @@ const resources = {
         }
       },
       "taskTypes": {
-        "Bug": "Bug"
+        "Bug": "Bug",
+        "PQR": "PQR",
+        "ODT": "ODT",
+        "Mejora": "Mejora",
+        "Alerta": "Alerta"
       },
       "modals": {
         "modal": {
@@ -402,7 +406,11 @@ const resources = {
         }
       },
       "taskTypes": {
-        "Bug": "Bug"
+        "Bug": "Bug",
+        "PQR": "PQR",
+        "ODT": "ODT",
+        "Mejora": "Improvement",
+        "Alerta": "Alert"
       },
       "modals": {
         "modal": {
