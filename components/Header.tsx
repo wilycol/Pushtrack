@@ -7,6 +7,7 @@ import { Project, User, UserRole, Language, HistoryEvent, ToastType } from '../t
 import LanguageSelector from './LanguageSelector';
 import NotificationBell from './NotificationBell';
 import AISelector from './AISelector';
+import HelpButton from './HelpButton';
 
 type ViewName = 'tasks' | 'projects' | 'teams' | 'trash' | 'reports' | 'kanban';
 
@@ -90,6 +91,7 @@ const Header: React.FC<HeaderProps> = ({ currentView, selectedProject, currentUs
           </nav>
 
           <div className="flex items-center space-x-4">
+             <HelpButton />
              <NotificationBell history={history} onMarkAllRead={onMarkAllRead} />
              <LanguageSelector onLanguageChange={onLanguageChange} />
              <AISelector addToast={addToast} />

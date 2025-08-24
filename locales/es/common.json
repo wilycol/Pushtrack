@@ -724,5 +724,12 @@
     "showTranslation": "Mostrar traducción",
     "showOriginal": "Mostrar original (es)",
     "translationError": "No se pudo traducir el texto."
+  },
+  "help": {
+    "openGuide": "Abrir Guía de Usuario",
+    "guide": "Ayuda"
+  },
+  "userGuide": {
+    "title": "Guía de Usuario"
   }
 }

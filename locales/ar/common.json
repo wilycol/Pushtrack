@@ -740,5 +740,12 @@
     "showTranslation": "عرض الترجمة",
     "showOriginal": "عرض الأصل (es)",
     "translationError": "تعذر ترجمة النص."
+  },
+  "help": {
+    "openGuide": "فتح دليل المستخدم",
+    "guide": "مساعدة"
+  },
+  "userGuide": {
+    "title": "دليل المستخدم"
   }
 }
