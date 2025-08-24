@@ -6,6 +6,7 @@ import App from './App';
 import i18n from './services/i18n';
 import { auth, ADMIN_EMAIL } from './services/firebase';
 import AuthGate from './components/AuthGate';
+import IntroVideo from './components/IntroVideo';
 import { MOCK_USERS } from './utils/mockData';
 import { User, UserRole } from './types';
 
@@ -19,6 +20,7 @@ const AppWrapper: React.FC = () => {
     const [firebaseUser, setFirebaseUser] = useState<FirebaseUser | null | 'loading'>('loading');
     const [appUser, setAppUser] = useState<User | null>(null);
     const [allUsers, setAllUsers] = useState<User[]>(MOCK_USERS);
+    const [showIntroVideo, setShowIntroVideo] = useState(true);
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -53,6 +55,11 @@ const AppWrapper: React.FC = () => {
         });
         return () => unsubscribe();
     }, [allUsers]);
+
+    // Mostrar vídeo de introducción si está habilitado
+    if (showIntroVideo) {
+        return <IntroVideo onComplete={() => setShowIntroVideo(false)} />;
+    }
 
     if (firebaseUser === 'loading') {
         return <div className="flex items-center justify-center min-h-screen text-slate-300 bg-[#0B0F1A]">Authenticating...</div>;
