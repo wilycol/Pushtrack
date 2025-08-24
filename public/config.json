@@ -1,13 +1,13 @@
 {
   "introVideo": {
     "enabled": true,
-    "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-    "title": "Bienvenido a Pushtrack",
-    "description": "Descubre cómo gestionar tus PQRs de manera eficiente"
+    "url": "https://www.youtube.com/embed/qSEHkjA17MA",
+    "title": "Welcome to Pushtrack",
+    "description": "Discover how to manage your projects efficiently"
   },
   "app": {
     "name": "Pushtrack",
     "version": "1.0.0",
-    "description": "Sistema de Gestión de PQRs"
+    "description": "Project Management System"
   }
 }
