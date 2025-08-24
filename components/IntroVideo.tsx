@@ -119,19 +119,34 @@ const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete }) => {
         </div>
 
         {/* Video */}
-        <video
-          ref={videoRef}
-          className="w-full h-auto"
-          autoPlay
-          muted
-          loop={false}
-          onEnded={handleVideoEnd}
-          onError={handleVideoError}
-          playsInline
-        >
-          <source src={config.introVideo.url} type="video/mp4" />
-          Tu navegador no soporta el elemento de vídeo.
-        </video>
+        {config.introVideo.url.includes('youtube.com/embed') ? (
+          <iframe
+            src={`${config.introVideo.url}?autoplay=1&mute=0&controls=1&rel=0`}
+            className="w-full h-96"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            onLoad={() => {
+              // YouTube iframe no tiene eventos onEnded, así que usamos un timeout
+              setTimeout(() => {
+                handleVideoEnd();
+              }, 30000); // 30 segundos como fallback
+            }}
+          />
+        ) : (
+          <video
+            ref={videoRef}
+            className="w-full h-auto"
+            autoPlay
+            loop={false}
+            onEnded={handleVideoEnd}
+            onError={handleVideoError}
+            playsInline
+          >
+            <source src={config.introVideo.url} type="video/mp4" />
+            Tu navegador no soporta el elemento de vídeo.
+          </video>
+        )}
 
         {/* Overlay de información */}
         <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
